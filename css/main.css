@@ -1,0 +1,94 @@
+:root {
+  --primary-color: #7200b8; /* Define the primary color */
+}
+body{
+  overflow-x: hidden;
+  font-family: 'Inter';
+  
+}
+nav {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0%;
+}
+.active {
+  color: #8c5bbd !important;
+}
+
+.color {
+  color: var(--primary-color);
+}
+.pt-8 {
+  padding-top: 100px;
+}
+.pt-15 {
+  padding-top: 162px;
+}
+.w-70{
+  width: 70%;
+}
+.w-90{
+  width: 90%;
+}
+.w-95{
+  width: 90%;
+}
+.footer {
+  background-color: #f3eef7;
+  padding: 40px 10px 0 0;
+  z-index: 999;
+  width: 100%;
+}
+.mainBg {
+  background-color: #f1ebf7;
+}
+.scroll-top-btn{
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  opacity: 0; /* Initially hidden */
+  transition: all 0.5s;
+  border: 0;
+}
+.show {
+  opacity: 100%;
+}
+.footer a {
+  text-decoration: none;
+}
+.footer-color {
+  color: #6b7280 !important;
+}
+
+.footer-logo {
+  max-width: 120px;
+}
+@media screen and (max-width: 992px) {
+.pt-8{
+  padding-top: 60px;
+}
+}
+
+@media screen and (max-width: 768px) {
+.pt-8{
+  padding-top: 60px;
+}
+}
+
+@media screen and (max-width: 576px) {
+.pt-8{
+  padding-top: 60px;
+}
+}
+
+@media screen and (max-width: 200px) {
+.pt-8{
+  padding-top: 60px;
+}
+}

@@ -1,0 +1,98 @@
+* {
+  font-family: "Inter";
+}
+header {
+  /* height: 100vh; */
+  /* background-color: #f1ebf7; */
+  background: linear-gradient(
+    180deg,
+    rgba(241, 235, 247, 0.6) 0%,
+    rgba(241, 235, 247, 0.15) 100%
+  );
+}
+header .sec-img {
+  z-index: -1;
+}
+.vials-head h1 {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 44px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.labels {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44.8px;
+  letter-spacing: 0%;
+}
+
+/* images box  */
+
+.box {
+  position: relative;
+  white-space: unset;
+}
+.box img {
+  width: 250px;
+}
+.box::before {
+  content: "";
+  position: absolute;
+  background-color: #f05a46;
+  width: 879px;
+  height: 3px;
+  bottom: 2px;
+  left: 90px;
+}
+.circle {
+  width: 30px;
+  height: 30px;
+  background-color: #f05a46;
+  border-radius: 100%;
+  color: white;
+  position: relative;
+  padding: 5px;
+  margin-left: 10px;
+}
+.number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+.instruction-label {
+  color: #f05a46;
+}
+.bullet {
+  color: #f05a46;
+}
+
+@media screen and (max-width: 992px) {
+  .box::before {
+    min-width: 400px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .box::before {
+    min-width: 400px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .box::before {
+    min-width: 400px;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  .box::before {
+    min-width: 400px;
+  }
+}

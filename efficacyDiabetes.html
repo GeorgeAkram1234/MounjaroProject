@@ -1,0 +1,1596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/efficacyDiabetes.css">
+    <title>Mounjaro</title>
+
+</head>
+
+<body>
+
+    <!-- efficacy data page of diabetes -->
+    <nav class="navbar navbar-expand-lg navbar-light p-lg-0 bg-white position-fixed fixed-top ">
+
+        <div class="container">
+            <a class="navbar-brand" href="home.html">
+                <img src="images/logoMounjaro.svg" alt="MounjaroLogo" class="w-100">
+
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 " href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link mx-2 dropdown-toggle" href="obesity.html" role="button"
+                            data-bs-toggle="dropdown">Obesity</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="obesity.html" id="obesityWorks">How MOUNJARO works</a>
+                            </li>
+                            <li><a class="dropdown-item" href="efficacyObesity.html" id="efficacyObesity">Efficacy &
+                                    Safety</a></li>
+                            <li><a class="dropdown-item" href="obesity.html" id="obesityWorks">Instructions on how to
+                                    use</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link mx-2 dropdown-toggle active" href="diabetes.html" role="button"
+                            data-bs-toggle="dropdown">Diabetes</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="diabetes.html" id="diabetesWorks">How MOUNJARO works</a>
+                            </li>
+                            <li><a class="dropdown-item" href="efficacyDiabetes.html" id="efficacyDiabetes">Efficacy &
+                                    Safety</a></li>
+                            <li><a class="dropdown-item" href="diabetes.html" id="diabetesWorks">Instructions on how to
+                                    use</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#" id="prescribing">Prescribing Info</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link mx-2 dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">Education Hub</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="podcasts">podcasts</a></li>
+                            <li><a class="dropdown-item" href="#" id="videos">videos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+
+        <div class="pt-15 text-center ">
+            <h1><span class="color">Efficacy </span>Data</h1>
+            <svg width="241" height="15" viewBox="0 0 241 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M223.206 8.97342C214.676 8.97342 206.147 9.07645 197.617 8.94532C190.778 8.84229 183.938 8.28967 177.089 8.22411C171.169 8.16791 165.21 8.18663 159.33 8.76736C146.981 9.97564 134.692 11.7647 122.333 12.898C116.383 13.4413 110.563 12.5327 104.764 10.3784C95.3044 6.86595 85.4951 8.56128 75.8657 10.3971C70.2461 11.4649 64.6765 12.7481 59.0569 13.7504C54.0672 14.6402 49.6275 13.8066 45.5778 10.444C41.4981 7.05329 36.2384 7.89626 31.5188 8.93595C24.6592 10.4346 17.9497 12.5421 11.2002 14.4716C6.97048 15.6799 3.15074 14.8837 0.570916 11.3806C-0.279025 10.2285 -0.069036 7.98056 0.480926 6.51001C0.71091 5.89182 3.4507 5.35792 4.43064 5.85434C7.56042 7.43729 10.3002 6.36016 13.21 5.55464C21.7694 3.1849 30.3489 0.646561 39.4183 1.36779C42.3581 1.60195 45.6978 2.23888 47.9777 3.8031C52.6073 6.98772 57.367 6.38824 62.3167 5.59208C70.8461 4.2152 79.3355 2.59481 87.8949 1.43336C94.2645 0.571636 100.524 1.31158 106.644 3.53146C114.313 6.30396 122.363 5.59211 130.272 4.73975C143.491 3.31603 156.64 1.13362 169.889 0.131394C177.209 -0.421232 184.668 0.936906 192.078 1.11487C201.977 1.34903 211.886 1.2179 221.796 1.34903C226.905 1.4146 232.045 1.51764 237.115 2.0609C238.535 2.21077 240.604 3.80308 240.904 5.04883C241.514 7.55907 239.085 7.73704 237.065 7.84008C232.455 8.09297 227.845 8.36458 223.236 8.63621C223.236 8.74861 223.226 8.86101 223.216 8.96405L223.206 8.97342Z"
+                    fill="#5D0096" />
+            </svg>
+
+        </div>
+        <div class="container">
+            <p class="efficacy-paragraph pt-3 pb-5">★MOUNJARO demonstrated superior mean HbA1c REDUCTIONS with
+                every dose, outperforming comparators in all phase 3 studies</p>
+        </div>
+
+        <div class="box-with-image position-relative mb-4">
+            <div class="gray-box position-absolute h-100 py-5">
+                <img src="images/Rec.svg" alt="rectangle" class="h-100">
+            </div>
+            <div class="container">
+                <div class=" image-over-box h-100 w-100">
+                    <img src="images/efficacyDiabetes1.png" alt="efficacyDiabetes1" class="w-100 h-100">
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+    <section>
+
+        <div class="container">
+            <p class="efficacy-paragraph pt-3 pb-5">★MOUNJARO demonstrated superior mean WEIGHT REDUCTIONS
+                with every dose, outperforming comparators in all phase 3 studies</p>
+        </div>
+
+        <div class="box-with-image position-relative mb-4">
+            <div class="gray-box position-absolute h-100 py-5">
+                <img src="images/Rec.svg" alt="rectangle" class="h-100">
+            </div>
+            <div class="container">
+                <div class=" image-over-box h-100 w-100">
+                    <img src="images/efficacyDiabetes2.png" alt="efficacyDiabetes2" class="w-100 h-100">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="text-center mainBg mt-4 p-3 ">
+        <h4 class="title-efficacy color">SURPASS- 1 Study<sup class="text-danger">8</sup></h4>
+        <div class="paragraph-efficacy">
+            <p class="p-0 m-0">MOUNJARO vs. Placebo </p>
+            <p>(T2D patients who had inadequate glycemic control with diet and exercise)</p>
+        </div>
+    </div>
+
+    <section>
+
+        <div class="my-5 py-5">
+            <div class="box-with-image position-relative mb-4">
+                <div class="gray-box position-absolute h-100 py-5">
+                    <img src="images/Rec.svg" alt="rectangle" class="h-100">
+                </div>
+                <div class="container">
+                    <div class=" image-over-box h-100 w-100">
+                        <img src="images/efficacyDiabetes3.png" alt="efficacyDiabetes3" class="w-100 h-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <div class="container">
+        <h4 class="color surpass-title">★SURPASS-1 Trial Design</h4>
+        <ul class="surpass-list">
+            <li>SURPASS-1 was a 40-week, double-blind, placebo-controlled, phase 3 trial that randomized 478 adult
+                patients with T2D who had inadequate glycemic control with diet and exercise to receive once-weekly SC
+                Mounjaro 5 mg, 10 mg, or 15 mg, or placebo (1:1:1:1 ratio)</li>
+            <li>
+                Study participants had a mean baseline A1C of 7.9% and mean T2D duration of 4.7 years.</li>
+        </ul>
+    </div>
+    <div class="container">
+        <h4 class="fs-5 text-danger">PRIMARY ENDPOINTS</h4>
+        <ul class="surpass-list">
+            <li>Superiority of Mounjaro 5 mg, 10 mg, and/or 15 mg to placebo in mean change from baseline in A1C at 40
+                weeks.</li>
+        </ul>
+    </div>
+    <div class="container">
+        <h4 class="fs-5 text-danger">KEY SECONDARY ENDPOINTS</h4>
+        <ul class="surpass-list">
+            <li>Mean change from baseline in fasting serum glucose to week 40.
+                The proportion of participants with HbA1c target values of less than 7∙0% (&lt;3 mmol/mol) and less than
+                5∙7%
+                (&lt;53 mmol/mol)
+                Mean change from baseline in bodyweight.</li>
+            <li>Mean change from baseline in bodyweight.
+            </li>
+        </ul>
+    </div>
+
+    <section>
+        <div class="container">
+            <h4 class="color surpass-title">★MOUNJARO demonstrated SUPERIORITY in HbA1c reduction vs. placebo<sup
+                    class="text-danger">8</sup></h4>
+            <h6 class="fw-bold py-2">PRIMARY ENDPOINTS</h6>
+            <p class="primary-endpoints">- Mean Change in HbA1c from baseline to week 40</p>
+
+        </div>
+
+
+        <div class="my-5">
+            <div class="row">
+                <div class=" col-md-8 position-relative mb-4">
+                    <div class="container text-danger text-center p-3">
+                        <h4>Mean Change in HbA1c from baseline to week 40</h4>
+                    </div>
+                    <div class="box-with-image position-relative mb-4">
+                        <div class="gray-box position-absolute h-100 py-5">
+                            <img src="images/Rec.svg" alt="rectangle" class="h-100">
+                        </div>
+                        <div class="container px-5">
+                            <div class=" image-over-box h-100 w-100">
+                                <img src="images/efficacyDiabetes4.png" alt="efficacyDiabetes4" class="w-100 h-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 container-lg d-flex flex-md-column align-items-center justify-content-center gap-4 ">
+                    <div class="details text-center py-4 px-2">
+                        <h2 class="text-danger">Up to 2.1%</h2>
+                        <p class="text-danger m-1">Significant Reductions</p>
+                        <p class="m-0"> in HbA1c with MOUNJARO at 40 weeks</p>
+                    </div>
+                    <p class="p-4 ps-0 mt-sm-5 mt-md-0 resp-paragraph">p&lt;0.0001 vs placebo <br> Change from baseline
+                        in
+                        HbA1c at 40 weeks from MMRM
+                        analysis.. <br> Data are LSM
+                        (SE), unless otherwise noted. Estimated treatment differences are LSM (95% CI) at 40 weeks,
+                        modified intention-to-treat population (efficacy analysis set). Arrows indicate when the
+                        maintenance dose of tirzepatide 5, 10, and 15 mg was reached.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container">
+            <h4 class="color surpass-title">★MOUNJARO demonstrated SUPERIORITY in HbA1c reduction vs. placebo<sup
+                    class="text-danger">8</sup></h4>
+            <h6 class="fw-bold py-2">PRIMARY ENDPOINTS</h6>
+            <p class="primary-endpoints">- Mean Change in HbA1c from baseline to week 40</p>
+
+        </div>
+
+
+
+        <div class="my-5">
+            <div class="row">
+                <div class=" col-md-8 position-relative mb-4">
+                    <div class="container text-danger text-center p-3">
+                        <h4>Mean Change in HbA1c from baseline to week 40</h4>
+                    </div>
+                    <div class="box-with-image position-relative mb-4">
+                        <div class="gray-box position-absolute h-100 py-5">
+                            <img src="images/Rec.svg" alt="rectangle" class="h-100">
+                        </div>
+                        <div class="container px-5">
+                            <div class=" image-over-box h-100 w-100">
+                                <img src="images/efficacyDiabetes5.png" alt="efficacyDiabetes5" class="w-100 h-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 container-lg d-flex flex-md-column align-items-center justify-content-center gap-4 ">
+                    <div class="details text-center py-4 px-2">
+                        <h2 class="text-danger">Up to 2.1%</h2>
+                        <p class="text-danger m-1">Significant Reductions</p>
+                        <p class="m-0"> in HbA1c with MOUNJARO at 40 weeks</p>
+                    </div>
+                    <p class="p-4 ps-0 mt-sm-5 mt-md-0 resp-paragraph">p&lt;0.0001 vs placebo <br> Change from baseline
+                        in
+                        HbA1c at 40 weeks from MMRM
+                        analysis.. <br> Data are LSM
+                        (SE), unless otherwise noted. Estimated treatment differences are LSM (95% CI) at 40 weeks,
+                        modified intention-to-treat population (efficacy analysis set). Arrows indicate when the
+                        maintenance dose of tirzepatide 5, 10, and 15 mg was reached.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="container">
+            <h4 class="color surpass-title">★A significantly higher proportion of participants given MOUNJARO
+                reached HbA1c targets (&lt;7·0%, ≤6·5%, and &lt;5·7%) <sup class="text-danger">8</sup></h4>
+            <h6 class="fw-bold py-2">SECONDARY ENDPOINTS</h6>
+            <p class="primary-endpoints">
+                -The proportion of participants with HbA1c target values of less than 7∙0% and less than 5∙7%
+            </p>
+            <p class="primary-endpoints">-Mean change from baseline in bodyweight.</p>
+
+        </div>
+
+
+
+        <div class="my-5">
+            <div class="row">
+                <div class=" col-md-8 position-relative mb-4">
+                    <div class="container text-danger text-center p-3">
+                        <h4>Percentage of participants reaching HbA1c targets (&lt;7·0%, &le;6·5%, and &lt;5·7%)</h4>
+                    </div>
+                    <div class="box-with-image position-relative mb-4">
+                        <div class="gray-box position-absolute h-100 py-5">
+                            <img src="images/Rec.svg" alt="rectangle" class="h-100">
+                        </div>
+                        <div class="container px-5">
+                            <div class=" image-over-box h-100 w-100">
+                                <img src="images/efficacyDiabetes6.png" alt="efficacyDiabetes6" class="w-100 h-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 container-lg d-flex  align-items-center justify-content-center gap-4 ">
+
+                    <p class="p-4 ps-0 mt-sm-5 mt-md-0 resp-paragraph">p&lt;0.0001 vs placebo <br> Change from baseline
+                        in
+                        HbA1c at 40 weeks from MMRM
+                        analysis.. <br> Data are LSM
+                        (SE), unless otherwise noted. Estimated treatment differences are LSM (95% CI) at 40 weeks,
+                        modified intention-to-treat population (efficacy analysis set). Arrows indicate when the
+                        maintenance dose of tirzepatide 5, 10, and 15 mg was reached.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container">
+        <h4 class="color surpass-title">★A significantly higher proportion of participants given MOUNJARO
+            reached HbA1c targets (&lt;7·0%, ≤6·5%, and &lt;5·7%) <sup class="text-danger">8</sup></h4>
+        <h6 class="fw-bold py-2">SECONDARY ENDPOINTS</h6>
+        <p class="primary-endpoints">
+            -The proportion of participants with HbA1c target values of less than 7∙0% and less than 5∙7%
+        </p>
+        <p class="primary-endpoints">-Mean change from baseline in bodyweight.</p>
+
+    </div>
+
+    <section>
+        <div class="my-5">
+            <div class="row">
+                <div class=" col-md-8 position-relative mb-4">
+
+                    <div class="container text-danger text-center p-3">
+                        <h4>Change from baseline in Bodyweight at 40 weeks</h4>
+                    </div>
+
+                    <div class="box-with-image position-relative mb-4">
+                        <div class="gray-box position-absolute h-100 py-5">
+                            <img src="images/Rec.svg" alt="rectangle" class="h-100">
+                        </div>
+                        <div class="container px-5">
+                            <div class=" image-over-box h-100 w-100">
+                                <img src="images/efficacyDiabetes7.png" alt="efficacyDiabetes7" class="w-100 h-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 container-lg d-flex flex-md-column align-items-center justify-content-center gap-4 ">
+                    <div class="details text-center py-4 px-2">
+                        <h2 class="text-danger">11%</h2>
+                        <p class="text-danger m-1">Significant Reductions</p>
+                        <p class="m-0"> in bodyweight with MOUNJARO 15 mg
+                            at 40 weeks</p>
+                    </div>
+                    <p class="p-4 ps-0 mt-sm-5 mt-md-0 resp-paragraph">p&lt;0.0001 vs placebo <br> Change from baseline
+                        in
+                        HbA1c at 40 weeks from MMRM
+                        analysis.. <br> Data are LSM
+                        (SE), unless otherwise noted. Estimated treatment differences are LSM (95% CI) at 40 weeks,
+                        modified intention-to-treat population (efficacy analysis set). Arrows indicate when the
+                        maintenance dose of tirzepatide 5, 10, and 15 mg was reached.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h4 class="color surpass-title">★A significantly higher proportion of participants given MOUNJARO
+                reached weight loss aims (&le;5%, &le;10%, and &le;15%)  <sup class="text-danger">8</sup></h4>
+        </div>
+
+
+        <div class="my-5">
+            <div class="row">
+                <div class=" col-md-8 position-relative mb-4">
+
+                    <div class="container text-danger text-center p-3">
+                        <h4>Percentage of people who achieved &ge;5%, &ge;10% and &ge;15% weight reduction at 40 weeks
+                        </h4>
+                    </div>
+                    <div class="box-with-image position-relative mb-4">
+                        <div class="gray-box position-absolute h-100 py-5">
+                            <img src="images/Rec.svg" alt="rectangle" class="h-100">
+                        </div>
+                        <div class="container px-5">
+                            <div class=" image-over-box h-100 w-100">
+                                <img src="images/efficacyDiabetes8.png" alt="efficacyDiabetes6" class="w-100 h-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 container-lg d-flex  align-items-center justify-content-center gap-4 ">
+
+                    <p class="p-4 ps-0 mt-sm-5 mt-md-0 resp-paragraph">p&lt;0.0001 vs placebo <br> Change from baseline
+                        in
+                        HbA1c at 40 weeks from MMRM
+                        analysis.. <br> Data are LSM
+                        (SE), unless otherwise noted. Estimated treatment differences are LSM (95% CI) at 40 weeks,
+                        modified intention-to-treat population (efficacy analysis set). Arrows indicate when the
+                        maintenance dose of tirzepatide 5, 10, and 15 mg was reached.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="text-center mainBg mt-4 p-3 ">
+        <h4 class="title-efficacy color">SURPASS- 2 Study<sup class="text-danger">9</sup></h4>
+        <div class="paragraph-efficacy">
+            <p class="p-0 m-0">MOUNJARO vs. Semaglutide</p>
+            <p>(T2D patients who had inadequate glycemic control on stable doses of metformin alone)</p>
+        </div>
+    </div>
+    <section>
+        <div class="box-with-image position-relative my-4">
+            <div class="gray-box position-absolute h-100 py-5">
+                <img src="images/Rec.svg" alt="rectangle" class="h-100">
+            </div>
+            <div class="container">
+                <div class=" image-over-box h-100 w-100">
+                    <img src="images/efficacyDiabetes9.png" alt="efficacyDiabetes9" class="w-100 h-100">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <h4 class="color surpass-title">★SURPASS-2 Trial Design <sup class="text-danger">9</sup></h4>
+        <ul class="surpass-list">
+            <li>SURPASS-2 was a 40-week, open-label (double-blind with respect to Mounjaro dose assignment),
+                active-controlled, phase 3 trial that randomized 1879 adult patients with T2D who had inadequate
+                glycemic control on stable doses of metformin alone to receive once-weekly SC Mounjaro 5 mg, 10 mg, or
+                15 mg or once-weekly SC semaglutide 1 mg (1:1:1:1 ratio), all in combination with metformin ≥1500 mg per
+                day.
+            </li>
+            <li>
+                Study participants had a mean baseline A1C of 8.3% and a mean T2D duration of 8.6 years.</li>
+        </ul>
+    </div>
+    <div class="container">
+        <h4 class="text-danger">COPRIMARY ENDPOINTS</h4>
+        <ul class="surpass-list">
+            <li>Non-inferiority of Mounjaro 5 mg, 10 mg, and/or 15 mg to placebo in mean change from baseline in A1C at
+                40 weeks.</li>
+        </ul>
+    </div>
+    <div class="container">
+        <h4 class="fs-5 text-danger">KEY SECONDARY ENDPOINTS</h4>
+        <ul class="surpass-list">
+            <li>Noninferiority of Mounjaro 5 mg to Semaglutide in mean change from baseline in A1C.</li>
+            <li>Superiority of Mounjaro to Semaglutide in mean change from baseline in A1C.</li>
+            <li>Superiority of proportion of patients with A1C &lt;7%.</li>
+            <li>Superiority in mean change from baseline in weight.</li>
+            <li> Superiority of Mounjaro 10 mg and/or 15 mg to Semaglutide for proportion of patients with A1C &lt;5.7%.
+            </li>
+        </ul>
+    </div>
+
+    <section>
+        <div class="container">
+            <h4 class="color surpass-title">★SUPERIOR mean HbA1c reductions across all 3 doses of MOUNJARO
+                compared with Semaglutide 1 mg.<sup class="text-danger">9</sup></h4>
+            <h6 class="fw-bold py-2">PRIMARY ENDPOINTS</h6>
+            <p class="primary-endpoints">
+                - Non-inferiority of Mounjaro 10 mg and/or 15 mg to Semaglutide in mean
+                change from baseline in A1C at 40 weeks</p>
+        </div>
+
+
+        <div class="my-5">
+            <div class="row">
+                <div class=" col-md-8 position-relative mb-4">
+
+                    <div class="container text-danger text-center p-3">
+                        <h4>Mean HbA1c Reductions at Week 40</h4>
+                    </div>
+
+                    <div class="box-with-image position-relative mb-4">
+                        <div class="gray-box position-absolute h-100 py-5">
+                            <img src="images/Rec.svg" alt="rectangle" class="h-100">
+                        </div>
+                        <div class="container px-5">
+                            <div class=" image-over-box h-100 w-100">
+                                <img src="images/efficacyDiabetes10.png" alt="efficacyDiabetes10" class="w-100 h-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 container-lg d-flex flex-md-column align-items-center justify-content-center gap-4 ">
+                    <div class="details text-center py-4 px-2">
+                        <p class="text-danger">Superior</p>
+                        <p class=" m-1"> HbA1c reductions across all doses</p>
+                        <h2 class="text-danger">Up to 2.46%</h2>
+                        <p class="m-0"> with MOUNJARO 15 mg</p>
+                    </div>
+                    <p class="p-4 ps-0 mt-sm-5 mt-md-0 resp-paragraph">p&lt;0.001 vs placebo
+                        Primary endpoint: HbA1c change from baseline to 40 weeks.
+                        Efficacy estimand, MMRM analysis, mITT population (efficacy analysis set).
+                        Data presented are LS means.
+                        LS=least squares; mITT=modified intent-to-treat; MMRM=mixed model for repeated measures.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container">
+            <h4 class="color surpass-title">★MOUNJARO provided sustained HbA1c reductions at every dose through week
+                40<sup class="text-danger">9</sup></h4>
+            <h6 class="fw-bold py-2">PRIMARY ENDPOINTS</h6>
+            <p class="primary-endpoints">
+                - Non-inferiority of Mounjaro 10 mg and/or 15 mg to Semaglutide in mean
+                change from baseline in A1C at 40 weeks</p>
+        </div>
+
+
+        <div class="my-5">
+            <div class="row">
+                <div class=" col-md-8 position-relative mb-4">
+
+                    <div class="container text-danger text-center p-3">
+                        <h4>Sustained HbA1c Reductions over 40 weeks</h4>
+                    </div>
+
+                    <div class="box-with-image position-relative mb-4">
+                        <div class="gray-box position-absolute h-100 py-5">
+                            <img src="images/Rec.svg" alt="rectangle" class="h-100">
+                        </div>
+                        <div class="container px-5">
+                            <div class=" image-over-box h-100 w-100">
+                                <img src="images/efficacyDiabetes11.png" alt="efficacyDiabetes11" class="w-100 h-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 container-lg d-flex flex-md-column align-items-center justify-content-center gap-4 ">
+                    <div class="details text-center py-4 px-2">
+                        <p>HbA1c reductions as
+                            <span class="text-danger">early as week 4 and
+                                sustained</span> through
+                            week 40
+                        </p>
+                    </div>
+                    <p class="p-4 ps-0 mt-sm-5 mt-md-0 resp-paragraph">p&lt;0.001 vs placebo
+                        Primary endpoint: HbA1c change from baseline to 40 weeks.
+                        Efficacy estimand, MMRM analysis, mITT population (efficacy analysis set).
+                        Data presented are LS means.
+                        LS=least squares; mITT=modified intent-to-treat; MMRM=mixed model for repeated measures.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section>
+        <div class="container">
+            <h4 class="color surpass-title">★Significantly more patients achieved an HbA1c of &lt;7% with MOUNJARO
+                Vs. Semaglutide 1 mg<sup class="text-danger">9</sup></h4>
+            <h6 class="fw-bold py-2"> SECONDARY ENDPOINTS
+            </h6>
+            <p class="primary-endpoints">
+                - Superiority of proportion of patients with A1C &lt;7% superiority in mean change from baseline in
+                weight. </p>
+            <p class="primary-endpoints">
+                - Superiority of Mounjaro 10 mg and/or 15 mg to Semaglutide for proportion of patients with
+                A1C &lt;5.7% </p>
+        </div>
+
+
+        <div class="my-5">
+            <div class="row">
+                <div class=" col-md-8 position-relative mb-4">
+
+                    <div class="container text-danger text-center p-3">
+                        <h4>Percentage of patients reaching HbA1c
+                            &lt;7% at week 40 (Efficacy Estimand)</h4>
+                    </div>
+
+                    <div class="box-with-image position-relative mb-4">
+                        <div class="gray-box position-absolute h-100 py-5">
+                            <img src="images/Rec.svg" alt="rectangle" class="h-100">
+                        </div>
+                        <div class="container px-5">
+                            <div class=" image-over-box h-100 w-100">
+                                <img src="images/efficacyDiabetes12.png" alt="efficacyDiabetes12" class="w-100 h-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 container-lg d-flex flex-md-column align-items-center justify-content-center gap-4 ">
+                    <div class="details text-center py-4 px-3">
+                        <h1 class="text-danger">92%</h1>
+                        <p>of patients
+                            on Mounjaro 15 mg
+                            <span class="text-danger">achieved an HbA1c
+                                of &lt;7%</span>
+                        </p>
+                    </div>
+                    <p class="p-4 ps-0 mt-sm-5 mt-md-0 resp-paragraph">Primary endpoint: HbA1c change from
+                        baseline to 40 weeks.
+                        Efficacy estimand, Estimated means, logistic regression, mITT population (efficacy analysis
+                        set). mITT=modified intent-to-treat.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container">
+            <h4 class="color surpass-title">★Significantly more patients on MOUNJARO reached HbA1c targets
+                vs Semaglutide 1 mg<sup class="text-danger">9</sup></h4>
+            <h6 class="fw-bold py-2"> SECONDARY ENDPOINTS</h6>
+            <p class="primary-endpoints">
+                - Superiority of proportion of patients with A1C &lt;7% superiority in mean change from baseline in
+                weight
+            </p>
+            <p class="primary-endpoints">
+                - Superiority of Mounjaro 10 mg and/or 15 mg to Semaglutide for proportion of patients with A1C
+                &lt;5.7%</p>
+        </div>
+
+
+        <div class="my-5">
+            <div class="row">
+                <div class=" col-md-8 position-relative mb-4">
+
+                    <div class="row container">
+                        <div class="col-md-6">
+                            <div class="container text-danger text-center p-3">
+                                <h4>Percentage of patients achieving
+                                    HbA1c &le;6.5% at week 404 (Efficacy Estimand))</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="container text-danger text-center p-3">
+                                <h4>Percentage of patients achieving
+                                    HbA1c &lt;5.7% at week 404 (Efficacy Estimand)</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box-with-image position-relative mb-4">
+                        <div class="gray-box position-absolute h-100 py-5">
+                            <img src="images/Rec.svg" alt="rectangle" class="h-100">
+                        </div>
+                        <div class="container px-5">
+                            <div class=" image-over-box h-100 w-100">
+                                <img src="images/efficacyDiabetes13.png" alt="efficacyDiabetes13" class="w-100 h-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 container-lg d-flex align-items-center justify-content-center gap-4 ">
+                    <p class="p-4 ps-0 mt-sm-5 mt-md-0 resp-paragraph">Primary endpoint: HbA1c change from baseline to
+                        40 weeks.
+                        *HbA1c &lt;5.7% is considered to be normal lycemia in the US and Europe.
+                        Efficacy estimand, Estimated means, logistic regression, mITT population efficacy analysis set.
+                        mITT=modified intent-to-treat.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container">
+            <h4 class="color surpass-title">★MOUNJARO demonstrated superior mean weight reductions across all
+                3 doses compared with Semaglutide 1 mg<sup class="text-danger">9</sup></h4>
+            <h6 class="fw-bold py-2"> SECONDARY ENDPOINTS</h6>
+            <p class="primary-endpoints">
+                - Superiority of proportion of patients with A1C &lt;7% superiority in mean change from baseline in
+                weight
+            </p>
+            <p class="primary-endpoints">
+                - Superiority of Mounjaro 10 mg and/or 15 mg to Semaglutide for proportion of patients with A1C
+                &lt;5.7%</p>
+        </div>
+
+
+        <div class="my-5">
+            <div class="row">
+                <div class=" col-md-8 position-relative mb-4">
+
+                    <div class="container text-danger text-center p-3">
+                        <h4>Mean weight reductions from baseline
+                            at week 40 (Efficacy Estimand)</h4>
+                    </div>
+
+                    <div class="box-with-image position-relative mb-4">
+                        <div class="gray-box position-absolute h-100 py-5">
+                            <img src="images/Rec.svg" alt="rectangle" class="h-100">
+                        </div>
+                        <div class="container px-5">
+                            <div class=" image-over-box h-100 w-100">
+                                <img src="images/efficacyDiabetes14.png" alt="efficacyDiabetes14" class="w-100 h-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 container-lg d-flex flex-md-column align-items-center justify-content-center gap-4 ">
+                    <div class="details text-center py-4 px-3">
+                        <p>MOUNJARO 15 mg
+                            delivered
+                            <span class="text-danger">Double the weight loss</span>
+                            vs Semaglutide 1 mg
+                        </p>
+                    </div>
+                    <p class="p-4 ps-0 mt-sm-5 mt-md-0 resp-paragraph">p&lt;0.001 vs placebo
+                        Primary endpoint: HbA1c change from baseline to 40 weeks.
+                        Efficacy estimand, MMRM analysis, mITT population (efficacy analysis set).
+                        Data presented are LS means.
+                        LS=least squares; mITT=modified intent-to-treat; MMRM=mixed model for repeated measures.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h4 class="text-danger surpass-title py-3">
+                ★MOUNJARO 15 mg helped nearly 3 times as many patients vs semaglutide
+                1 mg achieve a composite endpoint</h4>
+        </div>
+
+        <div class="box-with-image position-relative mb-4">
+            <div class="gray-box position-absolute h-100 py-5">
+                <img src="images/Rec.svg" alt="rectangle" class="h-100">
+            </div>
+            <div class="container">
+                <div class=" image-over-box h-100 w-100">
+                    <img src="images/efficacyDiabetes15.png" alt="efficacyDiabetes15" class="w-100 h-100">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="container">
+            <h4 class="text-danger surpass-title py-3">★Significant reductions in serum triglycerides</h4>
+            <p>Mounjaro delivered up to a 25% reduction in serum triglyceride levels</p>
+        </div>
+
+        <div class="box-with-image position-relative mb-4">
+            <div class="gray-box position-absolute h-100 py-5">
+                <img src="images/Rec.svg" alt="rectangle" class="h-100">
+            </div>
+            <div class="container">
+                <div class=" image-over-box h-100 w-100">
+                    <img src="images/efficacyDiabetes16.png" alt="efficacyDiabetes16" class="w-100 h-100">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section>
+        <div class="container">
+            <h4 class="text-danger surpass-title py-3">
+                ★Changes in waist circumference after 40 weeks vs Semaglutide 1 mg</h4>
+        </div>
+
+        <div class="box-with-image position-relative mb-4">
+            <div class="gray-box position-absolute h-100 py-5">
+                <img src="images/Rec.svg" alt="rectangle" class="h-100">
+            </div>
+            <div class="container">
+                <div class=" image-over-box h-100 w-100">
+                    <img src="images/efficacyDiabetes17.png" alt="efficacyDiabetes17" class="w-100 h-100">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="text-center mainBg my-4 p-3 ">
+        <h4 class="title-efficacy color">SURPASS- 3 Study<sup class="text-danger">10</sup></h4>
+        <div class="paragraph-efficacy">
+            <p class="p-0 m-0">MOUNJARO vs. Insulin Degludec</p>
+            <p> (T2D patients who had inadequate glycemic control on stable doses of metformin with or without an
+                SGLT2i)</p>
+        </div>
+    </div>
+
+    <div class="box-with-image position-relative mb-4">
+        <div class="gray-box position-absolute h-100 py-5">
+            <img src="images/Rec.svg" alt="rectangle" class="h-100">
+        </div>
+        <div class="container">
+            <div class=" image-over-box h-100 w-100">
+                <img src="images/efficacyDiabetes18.png" alt="efficacyDiabetes18" class="w-100 h-100">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <h4 class="color surpass-title">★SURPASS-3 Trial Design <sup class="text-danger">10</sup></h4>
+        <ul class="surpass-list">
+            <li>SURPASS-3 was a 52-week, open-label, active-controlled, phase 3 trial that randomized 1444 adult
+                patients with T2D who had inadequate glycemic control on stable doses of metformin with or without an
+                SGLT2i to once-weekly SC Mounjaro 5 mg, 10 mg, 15 mg, or once-daily SC insulin degludec 100 U/mL
+                (1:1:1:1 ratio).
+
+            </li>
+            <li>
+                Insulin degludec was initiated at 10 U/day and titrated to a fasting blood glucose of &lt;90 mg/dL using
+                a treat-to-target algorithm. At week 52, the mean daily insulin degludec dose was 49 U (0.5 U/kg), and
+                26% of patients achieved the target fasting serum glucose.</li>
+            <li>
+                Study participants had a mean baseline A1C of 8.2% and a mean T2D duration of 8.4 years.
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <h4 class="fs-5 text-danger">PRIMARY ENDPOINTS</h4>
+        <ul class="surpass-list">
+            <li>Non-inferiority of Mounjaro 10 mg and/or 15 mg to insulin degludec in mean change from baseline in A1C
+                at 52 weeks.</li>
+        </ul>
+    </div>
+    <div class="container">
+        <h4 class="fs-5 text-danger">KEY SECONDARY ENDPOINTS</h4>
+        <ul class="surpass-list">
+            <li>Non-inferiority of Mounjaro 5 mg to insulin degludec in mean change from baseline in A1C</li>
+            <li>Superiority of Mounjaro 5 mg, 10 mg, and/or 15 mg to insulin degludec in mean change from baseline in
+                A1C.</li>
+            <li>change from baseline in weight, and proportion of patients with A1C &lt;7%.</li>
+        </ul>
+    </div>
+
+    <section>
+        <div class="container">
+            <h4 class="color surpass-title">★SUPERIOR HbA1c reductions across all 3 doses of MOUNJARO vs Insulin
+                Degludec<sup class="text-danger">10</sup></h4>
+            <h6 class="fw-bold py-2">PRIMARY ENDPOINTS</h6>
+            <p class="primary-endpoints">
+                - Non-inferiority of Mounjaro 10 mg and/or 15 mg to insulin degludec in mean change
+                from baseline in A1C at 52 weeks</p>
+        </div>
+
+
+        <div class="my-5">
+            <div class="row">
+                <div class=" col-md-8 position-relative mb-4">
+
+                    <div class="container text-danger text-center p-3">
+                        <h4>Mean HbA1c Reductions at Week 52</h4>
+                    </div>
+
+                    <div class="box-with-image position-relative mb-4">
+                        <div class="gray-box position-absolute h-100 py-5">
+                            <img src="images/Rec.svg" alt="rectangle" class="h-100">
+                        </div>
+                        <div class="container px-5">
+                            <div class=" image-over-box h-100 w-100">
+                                <img src="images/efficacyDiabetes19.png" alt="efficacyDiabetes19" class="w-100 h-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 container-lg d-flex flex-md-column align-items-center justify-content-center gap-4 ">
+                    <div class="details text-center py-4 px-2">
+                        <p><span class="text-danger"> All 3 doses</span> of MOUNJARO led to <span
+                                class="text-danger">superior mean
+                                HbA1c reductions </span>vs insulin degludec
+                        </p>
+                    </div>
+                    <p class="p-4 ps-0 mt-sm-5 mt-md-0 resp-paragraph">Efficacy estimand, MMRM analysis,
+                        mITT population (efficacy analysis set).
+                        Data presented are LS means.
+                        LS=least squares; mITT=modified
+                        intent-to-treat; MMRM=mixed model
+                        for repeated measures.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section>
+        <div class="container">
+            <h4 class="color surpass-title">★Significant fasting glucose reductions over 52 weeks vs insulin degludec
+                <sup class="text-danger">10</sup>
+            </h4>
+            <p class="primary-endpoints">
+                Mounjaro delivered significant fasting glucose reductions from baseline over 52 weeks, with reductions
+                observed as early as the first measurement at week 2 that continued through week 52.</p>
+        </div>
+
+
+        <div class="my-5">
+            <div class="row">
+                <div class=" col-md-8 position-relative mb-4">
+
+                    <div class="container text-danger text-center p-3">
+                        <h4>Significant reductions in serum fasting glucose over 52 weeks</h4>
+                    </div>
+
+                    <div class="box-with-image position-relative mb-4">
+                        <div class="gray-box position-absolute h-100 py-5">
+                            <img src="images/Rec.svg" alt="rectangle" class="h-100">
+                        </div>
+                        <div class="container px-5">
+                            <div class=" image-over-box h-100 w-100">
+                                <img src="images/efficacyDiabetes20.png" alt="efficacyDiabetes20" class="w-100 h-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 container-lg d-flex flex-md-column align-items-center justify-content-center gap-4 ">
+                    <div class="details text-center py-4 px-2">
+                        <p> Reductions in FSG
+                            observed as <span class="text-danger">early</span> as the first measurement at <span
+                                class="text-danger"> week 2</span> that
+                            <span class="text-danger">continued through week 52</span>
+                        </p>
+                    </div>
+                    <p class="p-4 ps-0 mt-sm-5 mt-md-0 resp-paragraph">Efficacy estimand, MMRM analysis,
+                        mITT population (efficacy analysis set).
+                        Data presented are LS means.
+                        LS=least squares; mITT=modified
+                        intent-to-treat; MMRM=mixed model
+                        for repeated measures.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section>
+        <div class="container">
+            <h4 class="color surpass-title">★Mounjaro significantly improved percentage of time spent in target
+                range of 71-180 mg/dL vs insulin degludec as measured by CGM
+                <sup class="text-danger">10</sup>
+            </h4>
+        </div>
+
+
+        <div class="my-5">
+            <div class="row">
+                <div class=" col-md-8 position-relative mb-4">
+                    <div class="box-with-image position-relative mb-4">
+                        <div class="gray-box position-absolute h-100 py-5">
+                            <img src="images/Rec.svg" alt="rectangle" class="h-100">
+                        </div>
+                        <div class="container px-5">
+                            <div class=" image-over-box h-100 w-100">
+
+                                <div class="container text-danger text-center p-3">
+                                    <h4>Percentage of time in target range of 71-180 mg/dl</h4>
+                                </div>
+                                <img src="images/efficacyDiabetes21.png" alt="efficacyDiabetes21" class="w-100 h-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 container-lg d-flex align-items-center justify-content-center gap-4 ">
+
+                    <p class="p-4 ps-0 mt-sm-5 mt-md-0 resp-paragraph">Constrained longitudinal data
+                        analysis (cLDA) model.
+                        Data presented are LS means.
+                        CGM analysis set.
+                        CGM=continuous glucose
+                        monitoring; LS=least squares
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <section>
+        <div class="container">
+            <h4 class="color surpass-title">★Significant reductions in body weight across all doses of MOUNJARO
+                vs Insulin Degludec<sup class="text-danger">10</sup></h4>
+            <h6 class="fw-bold py-2">SECONDARY ENDPOINTS</h6>
+            <p class="primary-endpoints">
+                - mean change from baseline in weight.</p>
+        </div>
+
+
+        <div class="my-5">
+            <div class="row">
+                <div class=" col-md-8 position-relative mb-4">
+
+                    <div class="container text-danger text-center p-3">
+                        <h4>Mean weight reductions from baseline over 52 Weeks</h4>
+                    </div>
+
+                    <div class="box-with-image position-relative mb-4">
+                        <div class="gray-box position-absolute h-100 py-5">
+                            <img src="images/Rec.svg" alt="rectangle" class="h-100">
+                        </div>
+                        <div class="container px-5">
+                            <div class=" image-over-box h-100 w-100">
+                                <img src="images/efficacyDiabetes22.png" alt="efficacyDiabetes22" class="w-100 h-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 container-lg d-flex flex-md-column align-items-center justify-content-center gap-4 ">
+                    <div class="details text-center py-4 px-2">
+                        <p>
+                            Reductions in body weight observed as
+                            <span class="text-danger"> early as week 4 that continued through week 52</span>
+                        </p>
+                    </div>
+                    <p class="p-4 ps-0 mt-sm-5 mt-md-0 resp-paragraph">Efficacy estimand, MMRM analysis,
+                        mITT population (efficacy analysis set).
+                        Data presented are LS means.
+                        LS=least squares; mITT=modified intent
+                        -to-treat; MMRM=mixed model for
+                        repeated measures
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <section>
+
+        <div class="pt-5 text-center ">
+            <h1><span class="color">Benefits </span>of Mounjaro</h1>
+            <svg width="241" height="15" viewBox="0 0 241 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M223.206 8.97342C214.676 8.97342 206.147 9.07645 197.617 8.94532C190.778 8.84229 183.938 8.28967 177.089 8.22411C171.169 8.16791 165.21 8.18663 159.33 8.76736C146.981 9.97564 134.692 11.7647 122.333 12.898C116.383 13.4413 110.563 12.5327 104.764 10.3784C95.3044 6.86595 85.4951 8.56128 75.8657 10.3971C70.2461 11.4649 64.6765 12.7481 59.0569 13.7504C54.0672 14.6402 49.6275 13.8066 45.5778 10.444C41.4981 7.05329 36.2384 7.89626 31.5188 8.93595C24.6592 10.4346 17.9497 12.5421 11.2002 14.4716C6.97048 15.6799 3.15074 14.8837 0.570916 11.3806C-0.279025 10.2285 -0.069036 7.98056 0.480926 6.51001C0.71091 5.89182 3.4507 5.35792 4.43064 5.85434C7.56042 7.43729 10.3002 6.36016 13.21 5.55464C21.7694 3.1849 30.3489 0.646561 39.4183 1.36779C42.3581 1.60195 45.6978 2.23888 47.9777 3.8031C52.6073 6.98772 57.367 6.38824 62.3167 5.59208C70.8461 4.2152 79.3355 2.59481 87.8949 1.43336C94.2645 0.571636 100.524 1.31158 106.644 3.53146C114.313 6.30396 122.363 5.59211 130.272 4.73975C143.491 3.31603 156.64 1.13362 169.889 0.131394C177.209 -0.421232 184.668 0.936906 192.078 1.11487C201.977 1.34903 211.886 1.2179 221.796 1.34903C226.905 1.4146 232.045 1.51764 237.115 2.0609C238.535 2.21077 240.604 3.80308 240.904 5.04883C241.514 7.55907 239.085 7.73704 237.065 7.84008C232.455 8.09297 227.845 8.36458 223.236 8.63621C223.236 8.74861 223.226 8.86101 223.216 8.96405L223.206 8.97342Z"
+                    fill="#5D0096" />
+            </svg>
+
+        </div>
+        <div class="container">
+            <h3 class="color">★SURPASS-MRI</h3>
+            <div class="w-50">
+                <p>- Mounjaro (10 mg and 15 mg pooled) demonstrated significantly
+                    greater reductions in liver fat content (LFC) as measured by MRI
+                    compared with titrated insulin degludec</p>
+            </div>
+        </div>
+
+
+        <div class="my-5">
+            <div class="row">
+                <div class=" col-md-8 position-relative mb-4">
+
+                    <div class="container text-danger text-center p-3">
+                        <h4>Mean weight reductions from baseline over 52 Weeks</h4>
+                    </div>
+                    <div class="box-with-image position-relative mb-4">
+                        <div class="gray-box position-absolute h-100 py-5">
+                            <img src="images/Rec.svg" alt="rectangle" class="h-100">
+                        </div>
+                        <div class="container px-5">
+                            <div class=" image-over-box h-100 w-100">
+
+                                <img src="images/efficacyDiabetes23.png" alt="efficacyDiabetes23" class="w-100 h-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 container-lg d-flex flex-md-column align-items-center justify-content-center gap-4 ">
+                    <div class="details text-center pt-4 px-2">
+                        <p class="text-danger"><span class="fs-1">52%</span> reduction</p>
+                        <p> In LIVER FAT CONTENT
+                            as measured by MRI
+                        </p>
+                    </div>
+                    <p class="p-4 ps-0 mt-sm-5 mt-md-0 resp-paragraph">Analysis based on change from
+                        baseline in LFC (%).
+                        Percentage changes were calculated
+                        by dividing population-based results
+                        by the mean baseline values for
+                        each group.
+                        MRI=magnetic resonance imaging.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="container">
+            <h4 class="text-danger surpass-title py-3">
+                ★Benefits of Mounjaro beyond glycemic control and weight loss</h4>
+        </div>
+
+        <div class="mainBg p-4 text-center">
+            <div class="container">
+                <img src="images/efficacyDiabetes24.png" alt="efficacyDiabetes24" class="w-100 ">
+            </div>
+        </div>
+
+    </section>
+
+    <div class="container my-5">
+        <div class="container-fluid card-border p-5 ">
+            <div class="w-90">
+                <div class="text-center pb-3">
+                    <h4 class="color">Cardiovascular safety evaluation <sup class="text-danger">4</sup></h4>
+                </div>
+                <p>In patients with at least one adjudication-confirmed MACE-4:</p>
+                <p>•In a primary meta-analysis of phase 2 and 3 registration studies, where a total of 116 patients
+                    (Mounjaro: 60 [n=4410]; all comparators: 56 [n=2169]) experienced at least one
+                    adjudication-confirmed
+                    MACE-4:</p>
+                <p class="text-danger"><svg width="15" height="20" viewBox="0 0 15 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M-0.000104948 1.00057L-0.000105735 19.0006C0.000465508 19.1828 0.0507289 19.3614 0.145272 19.5172C0.239816 19.673 0.375059 19.8001 0.536447 19.8848C0.697834 19.9694 0.879254 20.0085 1.06118 19.9977C1.2431 19.9869 1.41864 19.9267 1.56889 19.8236L14.5689 10.8236C15.1079 10.4506 15.1079 9.55257 14.5689 9.17857L1.5689 0.178573C1.41895 0.074398 1.24333 0.0133073 1.0611 0.00193832C0.878874 -0.00943065 0.697017 0.029357 0.535288 0.114087C0.373559 0.198817 0.238141 0.326249 0.143751 0.482537C0.0493612 0.638826 -0.00039295 0.817993 -0.000104948 1.00057Z"
+                            fill="#C33232" />
+                    </svg> Mounjaro was not associated with excess risk for CV events compared with pooled comparators
+                    (HR:
+                    0.81; CI: 0.52 to 1.26).
+                </p>
+
+                <p>In patients with established CV disease:</p>
+                <p>•In an additional analysis conducted specifically for the SURPASS-4 study that enrolled patients with
+                    established CV disease, where a total of 109 patients (Mounjaro: 47 [n=995]; insulin glargine: 62
+                    [n=1000]) experienced at least one adjudication-confirmed MACE-4:</p>
+                <p class="text-danger"><svg width="15" height="20" viewBox="0 0 15 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M-0.000104948 1.00057L-0.000105735 19.0006C0.000465508 19.1828 0.0507289 19.3614 0.145272 19.5172C0.239816 19.673 0.375059 19.8001 0.536447 19.8848C0.697834 19.9694 0.879254 20.0085 1.06118 19.9977C1.2431 19.9869 1.41864 19.9267 1.56889 19.8236L14.5689 10.8236C15.1079 10.4506 15.1079 9.55257 14.5689 9.17857L1.5689 0.178573C1.41895 0.074398 1.24333 0.0133073 1.0611 0.00193832C0.878874 -0.00943065 0.697017 0.029357 0.535288 0.114087C0.373559 0.198817 0.238141 0.326249 0.143751 0.482537C0.0493612 0.638826 -0.00039295 0.817993 -0.000104948 1.00057Z"
+                            fill="#C33232" />
+                    </svg> Mounjaro was not associated with excess risk for CV events compared with insulin glargine
+                    (HR:
+                    0.74; CI: 0.51 to 1.08).
+                </p>
+            </div>
+        </div>
+        <p class="text-danger py-3">
+            CI=confidence interval; CV=cardiovascular; HR=hazard ratio; MACE-4=major adverse cardiovascular events,
+            including CV death, nonfatal myocardial infarction, nonfatal stroke, or hospitalization for unstable angina.
+        </p>
+    </div>
+
+    <div class="text-center mainBg my-4 p-3 ">
+        <h4 class="title-efficacy color">SURPASS- 4 Study<sup class="text-danger">11</sup></h4>
+        <div class="paragraph-efficacy">
+            <p class="p-0 m-0">MOUNJARO vs. Insulin Glargine</p>
+            <p> (T2D patients who had increased cardiovascular risk and on background metformin and/or SU and/or SGLT2i)
+            </p>
+        </div>
+    </div>
+
+    <div class="box-with-image position-relative mb-4">
+        <div class="gray-box position-absolute h-100 py-5">
+            <img src="images/Rec.svg" alt="rectangle" class="h-100">
+        </div>
+        <div class="container">
+            <div class=" image-over-box h-100 w-100">
+                <img src="images/efficacyDiabetes25.png" alt="efficacyDiabetes25.png" class="w-100 h-100">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h4 class="color surpass-title">★SURPASS-4 Trial Design <sup class="text-danger">11</sup></h4>
+        <ul class="surpass-list">
+            <li>SURPASS-4 was a 104-week, open-label, active-controlled, phase 3 trial that randomized 2002 adult
+                patients with T2D who had increased cardiovascular risk to once-weekly SC Mounjaro 5 mg, 10 mg, 15 mg,
+                or once-daily SC insulin glargine 100 U/mL (1:1:1:3 ratio), on background metformin (95%), and/or
+                sulfonylureas (54%) and/or an SGLT2i (25%).
+            </li>
+            <li> Insulin glargine was initiated at 10 U/day and titrated to a fasting blood glucose of &lt;100 mg/dL
+                using a treat-to-target algorithm; dose adjustments were made based on the median value of the last 3
+                self-monitored fasting blood glucose values. At week 52, 30% of patients achieved the target fasting
+                serum glucose, and the mean daily insulin glargine dose was 44 U (0.5 U/kg)
+            </li>
+            <li>
+                Study participants had a mean baseline A1C of 8.5% and a mean duration of T2D of 11.8 years.
+                .
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <h4 class="fs-5 text-danger">PRIMARY ENDPOINTS</h4>
+        <ul class="surpass-list">
+            <li>Non-inferiority of Mounjaro 10 mg and/or 15 mg to insulin glargine in mean change from baseline in A1C
+                at 52 weeks.</li>
+        </ul>
+    </div>
+    <div class="container">
+        <h4 class="fs-5 text-danger">KEY SECONDARY ENDPOINTS</h4>
+        <ul class="surpass-list">
+            <li>Non-inferiority of Mounjaro 5 mg to insulin glargine in mean change from baseline in A1C</li>
+            <li>Superiority of Mounjaro 5 mg, 10 mg, and/or 15 mg to insulin glargine in mean change from baseline in
+                A1C.</li>
+            <li>Mean change from baseline in weight, and proportion of patients with A1C &lt;7%.</li>
+        </ul>
+    </div>
+
+
+    <div class="text-center mainBg my-4 p-3 ">
+        <h4 class="title-efficacy color">SURPASS- 5 Study<sup class="text-danger">12</sup></h4>
+        <div class="paragraph-efficacy">
+            <p class="p-0 m-0">MOUNJARO vs. Placebo </p>
+            <p> (T2D patients who had inadequate glycemic control on insulin glargine 100 U/mL, with or without
+                metformin) (≥1500 mg/day)
+            </p>
+        </div>
+    </div>
+
+    <div class="box-with-image position-relative mb-4">
+        <div class="gray-box position-absolute h-100 py-5">
+            <img src="images/Rec.svg" alt="rectangle" class="h-100">
+        </div>
+        <div class="container">
+            <div class=" image-over-box h-100 w-100">
+                <img src="images/efficacyDiabetes26.png" alt="efficacyDiabetes26.png" class="w-100 h-100">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h4 class="color surpass-title">★SURPASS-5 Trial Design <sup class="text-danger">12</sup></h4>
+        <ul class="surpass-list">
+            <li>SURPASS-5 was a 40-week, double-blind, placebo-controlled, phase 3 trial that randomized 475 adult
+                patients with T2D who had inadequate glycemic control on insulin glargine 100 U/mL, with or without
+                metformin (≥1500 mg/day), to receive once-weekly SC Mounjaro 5 mg, 10 mg, 15 mg, or placebo (1:1:1:1
+                ratio)
+            </li>
+            <li> The background dose of insulin glargine was titrated to a fasting blood glucose of &lt;100 mg/dL using
+                a treat-to-target algorithm.
+            </li>
+            <li>
+                At randomization, the initial insulin glargine dose in patients with A1C ≤8.0% was reduced by 20%. At 40
+                weeks, the mean dose of insulin glargine was 38 U/day, 36 U/day, 29 U/day, and 59 U/day for patients on
+                Mounjaro 5 mg, 10 mg, 15 mg, and placebo, respectively.
+            </li>
+            <li> Study participants had a mean baseline A1C of 8.5% and a mean duration of T2D of 11.8 years.</li>
+        </ul>
+    </div>
+    <div class="container">
+        <h4 class="fs-5 text-danger">PRIMARY ENDPOINTS</h4>
+        <ul class="surpass-list">
+            <li>Superiority of Mounjaro 10 mg and/or 15 mg to placebo in mean change from baseline in A1C at 40 weeks.
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <h4 class="fs-5 text-danger">KEY SECONDARY ENDPOINTS</h4>
+        <ul class="surpass-list">
+            <li>Superiority of Mounjaro 5 mg to placebo in mean change from baseline in A1C.</li>
+            <li>Superiority of Mounjaro to placebo in proportion of patients with A1C &lt;7% (Mounjaro 5 mg, 10 mg, and
+                15 mg) and &lt;5.7% (Mounjaro 10 mg and 15 mg).</li>
+            <li>
+                Mean change from baseline in fasting serum glucose, and mean change from baseline in weight.
+            </li>
+        </ul>
+    </div>
+
+    <section>
+
+        <div class="pt-55 text-center ">
+            <h1><span class="color">Safety </span>Data</h1>
+            <svg width="241" height="15" viewBox="0 0 241 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M223.206 8.97342C214.676 8.97342 206.147 9.07645 197.617 8.94532C190.778 8.84229 183.938 8.28967 177.089 8.22411C171.169 8.16791 165.21 8.18663 159.33 8.76736C146.981 9.97564 134.692 11.7647 122.333 12.898C116.383 13.4413 110.563 12.5327 104.764 10.3784C95.3044 6.86595 85.4951 8.56128 75.8657 10.3971C70.2461 11.4649 64.6765 12.7481 59.0569 13.7504C54.0672 14.6402 49.6275 13.8066 45.5778 10.444C41.4981 7.05329 36.2384 7.89626 31.5188 8.93595C24.6592 10.4346 17.9497 12.5421 11.2002 14.4716C6.97048 15.6799 3.15074 14.8837 0.570916 11.3806C-0.279025 10.2285 -0.069036 7.98056 0.480926 6.51001C0.71091 5.89182 3.4507 5.35792 4.43064 5.85434C7.56042 7.43729 10.3002 6.36016 13.21 5.55464C21.7694 3.1849 30.3489 0.646561 39.4183 1.36779C42.3581 1.60195 45.6978 2.23888 47.9777 3.8031C52.6073 6.98772 57.367 6.38824 62.3167 5.59208C70.8461 4.2152 79.3355 2.59481 87.8949 1.43336C94.2645 0.571636 100.524 1.31158 106.644 3.53146C114.313 6.30396 122.363 5.59211 130.272 4.73975C143.491 3.31603 156.64 1.13362 169.889 0.131394C177.209 -0.421232 184.668 0.936906 192.078 1.11487C201.977 1.34903 211.886 1.2179 221.796 1.34903C226.905 1.4146 232.045 1.51764 237.115 2.0609C238.535 2.21077 240.604 3.80308 240.904 5.04883C241.514 7.55907 239.085 7.73704 237.065 7.84008C232.455 8.09297 227.845 8.36458 223.236 8.63621C223.236 8.74861 223.226 8.86101 223.216 8.96405L223.206 8.97342Z"
+                    fill="#5D0096" />
+            </svg>
+
+        </div>
+        <div class="container">
+            <p class="color pt-3 safety">★Adverse reactions in pool of placebo-controlled trials reported in ≥5%
+                of Mounjaro-treated patients</p>
+            <p class="safety-paragraph">These adverse reactions occurred more commonly on MOUNJARO than on placebo and
+                occurred in at least 5% of patients treated with MOUNJARO.</p>
+        </div>
+
+        <div class="box-with-image position-relative mb-4">
+            <div class="gray-box position-absolute h-100 py-5">
+                <img src="images/Rec.svg" alt="rectangle" class="h-100">
+            </div>
+            <div class="container">
+                <div class=" image-over-box h-100 w-100">
+                    <img src="images/efficacyDiabetes27.png" alt="efficacyDiabetes27" class="w-100 h-100">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <div class="container ">
+        <p class="color pt-3 safety">★Adverse reactions in pool of placebo-controlled trials reported in ≥5%
+            of Mounjaro-treated patients</p>
+    </div>
+
+    <div class="box-with-image position-relative mb-4">
+        <div class="gray-box position-absolute h-100 py-5">
+            <img src="images/Rec.svg" alt="rectangle" class="h-100">
+        </div>
+        <div class="container">
+            <div class=" image-over-box h-100 w-100">
+                <div class="text-center color safety">
+                    Percentage of patients who discontinued treatment <br> due to GI adverse reactions,
+                    placebo-controlled
+                    trialsl
+                </div>
+                <img src="images/efficacyDiabetes28.png" alt="efficacyDiabetes28" class="w-100 h-100">
+            </div>
+        </div>
+    </div>
+
+    <div class="container ">
+        <p class="color pt-3 safety">★SURPASS-2 Adverse Reactions<sup class="text-danger">9</sup></p>
+    </div>
+    <div class="my-5">
+        <div class="row">
+            <div class=" col-md-8 position-relative mb-4">
+
+                <div class="box-with-image position-relative mb-4">
+                    <div class="gray-box position-absolute h-100 py-5">
+                        <img src="images/Rec.svg" alt="rectangle" class="h-100">
+                    </div>
+                    <div class="container px-5">
+                        <div class=" image-over-box h-100 w-100">
+
+                            <img src="images/efficacyDiabetes29.png" alt="efficacyDiabetes29" class="w-100 h-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 container-lg d-flex align-items-center justify-content-center gap-4 ">
+
+                <p class="p-4 ps-0 mt-sm-5 mt-md-0 resp-paragraph">The most common ARs were <span
+                        class="text-danger">gastrointestinal (GI) in
+                        nature</span> and were mostly <span class="text-danger">
+                        mild to moderate.
+                    </span>
+                    Gastrointestinal adverse reactions primarily <span class="text-danger">
+                        occurred during dose escalation and decreased over
+                        time.
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container ">
+        <p class="color pt-3 safety">★SURPASS-2 Adverse Reactions<sup class="text-danger">9</sup></p>
+        <p>The incidence* of nausea was mostly mild to moderate in severity and decreased over time</p>
+    </div>
+    <div class="my-5">
+        <div class="row">
+            <div class=" col-md-8 position-relative mb-4">
+
+                <div class="box-with-image position-relative mb-4">
+                    <div class="gray-box position-absolute h-100 py-5">
+                        <img src="images/Rec.svg" alt="rectangle" class="h-100">
+                    </div>
+                    <div class="container px-5">
+                        <div class=" image-over-box h-100 w-100">
+
+                            <img src="images/efficacyDiabetes30.png" alt="efficacyDiabetes30" class="w-100 h-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 container-lg d-flex align-items-center justify-content-center gap-4 ">
+
+                <p class="p-4 ps-0 mt-sm-5 mt-md-0 resp-paragraph">* Incidence refers to the proportion of participants
+                    who have a new event during a time interval.
+                    † Shaded areas indicate the period before reaching the maintenance dose of the study treatments.
+                    Data represent the percentage of participants who reported a new event relative to participants at
+                    risk during a time interval; mITT population (safety analysis set). Shaded areas indicate the period
+                    of time before reaching the maintenance dose of the study treatments.
+                    mITT=modified intent-to-treat.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container ">
+        <p class="color pt-3 safety">★SURPASS-2 Adverse Reactions<sup class="text-danger">9</sup></p>
+    </div>
+
+    <div class="box-with-image position-relative mb-4">
+        <div class="gray-box position-absolute h-100 py-5">
+            <img src="images/Rec.svg" alt="rectangle" class="h-100">
+        </div>
+        <div class="container">
+            <div class=" image-over-box h-100 w-100">
+                <img src="images/efficacyDiabetes31.png" alt="efficacyDiabetes31" class="w-100 h-100">
+            </div>
+        </div>
+    </div>
+
+    <div class="container ">
+        <p class="ref pt-3 text-danger">★References:</p>
+    </div>
+    <div class="container-lg">
+        <div class="card-border p-4 mb-5">
+            <ol class="color">
+                <li>
+                    <p class="text-black">Nauck MA, D'Alessio DA. Tirzepatide, a dual GIP/GLP-1 receptor co-agonist for
+                        the
+                        treatment of type 2 diabetes with unmatched effectiveness regrading glycaemic control and body
+                        weightr
+                        eduction. Cardiovascular diabetology. 2022 Sep 1;21(1):169.</p>
+                </li>
+                <li>
+                    <p class="text-black">
+                        GLUCAGON-LIKE PEPTIDE-1 (GLP-1) RECEPTOR AGONISTS AND DUALAGONISTS. Available at: <br>
+                        <a
+                            href=" https://elsevier.health/en-US/preview/glucagon-like-peptide-1-glp-1-receptor-agonists.Last">
+                            https://elsevier.health/en-US/preview/glucagon-like-peptide-1-glp-1-receptor-agonists.Last</a>
+                        <br>
+                        accessed:
+                        Nov.05.2024.
+                    </p>
+                </li>
+                <li>
+                    <p class="text-black">
+                        Mounjaro prescribing information. Approval date: 13/3/2024.
+                    </p>
+                </li>
+                <li>
+                    <p class="text-black">Mounjaro, EMA Summary of product characteristics. Available at:
+                        <a
+                            href=" https://www.ema.europa.eu/en/documents/product-information/mounjaro-epar-product-information_en.pdf.">
+                            https://www.ema.europa.eu/en/documents/product-information/mounjaro-epar-product-information_en.pdf.</a>
+                        Last accessed: 15 September 2022.
+                    </p>
+                </li>
+                <li>
+                    <p class="text-black">Nauck MA, Quast DR, Wefers J, Pfeiffer AFH. The evolving story of incretins
+                        (GIP and GLP-1) in metabolic and cardiovascular disease: A pathophysiological update. Diabetes
+                        Obes Metab. 2021;23 Suppl 3:5-29.</p>
+                </li>
+                <li>
+                    <p class="text-black">Krieger JP. Intestinal glucagon-like peptide-1 effects on food intake:
+                        Physiological relevance and emerging mechanisms. Peptides. 2020;131:170342.</p>
+                </li>
+                <li>
+                    <p class="text-black">Heise T, DeVries JH, Urva S, et al. Tirzepatide Reduces Appetite, Energy
+                        Intake, and Fat Mass in People With Type 2 Diabetes. Diabetes Care. 2023;46(5):998-1004.</p>
+                </li>
+                <li>
+                    <p class="text-black">Rosenstock J, et.al, Efficacy and safety of a novel dual GIP and GLP-1
+                        receptor agonist tirzepatide in patients with type 2 diabetes (SURPASS-1): a double-blind,
+                        randomised, phase 3 trial. Lancet. 2021;398(10295):143-155.</p>
+                </li>
+                <li>
+                    <p class="text-black">Frías JP, Davies MJ, Rosenstock J, et al. SURPASS-2 Investigators. Tirzepatide
+                        versus Semaglutide Once Weekly in Patients with Type 2 Diabetes. N Engl J Med.
+                        2021;385(6):503-515.</p>
+                </li>
+                <li>
+                    <p class="text-black">Ludvik B, et.al, Once-weekly tirzepatide versus once-daily insulin degludec as
+                        add-on to metformin with or without SGLT2 inhibitors in patients with type 2 diabetes
+                        (SURPASS-3): a randomised, open-label, parallel-group, phase 3 trial. Lancet.
+                        2021;398(10300):583-598.</p>
+                </li>
+                <li>
+                    <p class="text-black">Del Prato S, et al. Tirzepatide versus insulin glargine in type 2 diabetes and
+                        increased cardiovascular risk (SURPASS-4): a randomised, open-label, parallel-group,
+                        multicentre,phase 3 trial. The Lancet. 2021 Nov 13;398(10313):1811-24.</p>
+                </li>
+                <li>
+                    <p class="text-black">Dahl D, et.al, Effect of Subcutaneous Tirzepatide vs Placebo Added to Titrated
+                        Insulin Glargine on Glycemic Control in Patients With Type 2 Diabetes: The SURPASS-5 Randomized
+                        Clinical Trial. JAMA. 2022;327(6):534-545.</p>
+                </li>
+                <li>
+                    <p class="text-black">Gastaldelli A, et.al, Effect of tirzepatide versus insulin degludec on liver
+                        fat content and abdominal adipose tissue in people with type2 diabetes (SURPASS-3 MRI): a
+                        substudy of the randomised, open-label, parallel-group, phase 3 SURPASS-3 trial. Lancet Diabetes
+                        Endocrinol. 2022:10(6):393-406.</p>
+                </li>
+                <li>
+                    <p class="text-black">
+                        Mounjaro, FDA Summary of product characteristics Available at:<br>
+                        <a href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/215866s000lbl.pdf"
+                            target="_blank">
+                            https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/215866s000lbl.pdf
+                        </a>. Last accessed: May 2022.
+                    </p>
+                </li>
+
+            </ol>
+        </div>
+    </div>
+
+    <button class="btn scroll-top-btn">
+        <img src="images/Top.png" alt="top">
+    </button>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-sm-4 justify-content-around">
+                <!-- Column 1 -->
+                <div class="col-md-2">
+                    <h6><strong>Home</strong></h6>
+                    <a class="text-secondary" href="#" id="indication">Indication</a>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-md-2">
+                    <h6><strong>Obesity</strong></h6>
+                    <a class="footer-color" href="#" id="obesityWorks">How MOUNJARO works</a><br>
+                    <a class="footer-color" href="#" id="efficacyObesity">Efficacy & Safety</a><br>
+                    <a class="footer-color" href="#" id="obesityWorks">Instructions on how to use</a><br>
+                    - <a class="footer-color" href="#" id="vials">Vials</a><br>
+                    - <a class="footer-color" href="#" id="kwipens">Kwikpens</a>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="col-md-2">
+                    <h6><strong>Diabetes</strong></h6>
+                    <a class="footer-color" href="#" id="diabetesWorks">How MOUNJARO works</a><br>
+                    <a class="footer-color" href="#" id="efficacyDiabetes">Efficacy & Safety</a><br>
+                    <a class="footer-color" href="#" id="diabetesWorks">Instructions on how to use</a><br>
+                    - <a class="footer-color" href="#" id="vials">Vials</a><br>
+                    - <a class="footer-color" href="#" id="kwipens">Kwikpens</a>
+
+                </div>
+
+                <!-- Column 4 -->
+                <div class="col-md-3">
+                    <h6><strong>Prescribing info</strong></h6>
+                    <a class="footer-color" href="#Therapeutic">Therapeutic indications</a><br>
+                    <a class="footer-color" href="#Posology">Posology and method of administration</a><br>
+                    <a class="footer-color" href="#Contraindications">Contraindications</a><br>
+                    <a class="footer-color" href="#Special">Special warnings and precautions for use</a><br>
+                    <a class="footer-color" href="#Fertility">Fertility, pregnancy and lactation</a><br>
+                    <a class="footer-color" href="#Undesirable">Undesirable effects</a>
+                </div>
+
+                <!-- Column 5 -->
+                <div class="col-md-2">
+                    <h6><strong>Education Hub</strong></h6>
+                    <a class="footer-color" href="#" id="podcasts">Podcasts</a><br>
+                    <a class="footer-color" href="#" id="videos">Videos</a>
+                </div>
+
+                <!-- Logo Column -->
+
+                <div class=" d-flex gap-4 align-items-center justify-content-between">
+                    <div>
+                        <img src="images/logoMounjaro.svg" alt="MounjaroLogo" class="w-100">
+
+                    </div>
+                    <div>
+                        <p class="footer-color">© 2024 Mounjaro® (tirzepatide). All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/efficacyDiabetes.js"></script>
+</body>
+
+</html>

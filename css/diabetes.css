@@ -1,0 +1,32 @@
+body {
+  font-family: "Inter";
+}
+/* header {
+  height: 100vh; 
+} */
+
+header h1 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: Auto;
+}
+.structure-paragraph {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 38.4px;
+  letter-spacing: 0%;
+}
+.top-30 {
+  top: -30px;
+}
+.underImage {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22.4px;
+  letter-spacing: 0%;
+}

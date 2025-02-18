@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/efficacyObesity.css">
+    <title>Mounjaro</title>
+
+</head>
+
+<body>
+
+    <!-- efficacy data page of Obesity -->
+    <nav class="navbar navbar-expand-lg navbar-light p-lg-0 bg-white position-fixed fixed-top ">
+
+        <div class="container">
+            <a class="navbar-brand" href="home.html">
+                <img src="images/logoMounjaro.svg" alt="MounjaroLogo" class="w-100">
+
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 " href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link mx-2 dropdown-toggle active" href="obesity.html" role="button"
+                            data-bs-toggle="dropdown">Obesity</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="obesity.html" id="obesityWorks">How MOUNJARO works</a>
+                            </li>
+                            <li><a class="dropdown-item" href="efficacyObesity.html" id="efficacyObesity">Efficacy &
+                                    Safety</a></li>
+                            <li><a class="dropdown-item" href="obesity.html" id="obesityWorks">Instructions on how to
+                                    use</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link mx-2 dropdown-toggle " href="diabetes.html" role="button"
+                            data-bs-toggle="dropdown">Diabetes</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="diabetes.html" id="diabetesWorks">How MOUNJARO works</a>
+                            </li>
+                            <li><a class="dropdown-item" href="efficacyDiabetes.html" id="efficacyDiabetes">Efficacy &
+                                    Safety</a></li>
+                            <li><a class="dropdown-item" href="diabetes.html" id="diabetesWorks">Instructions on how to
+                                    use</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#" id="prescribing">Prescribing Info</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link mx-2 dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">Education Hub</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="podcasts">podcasts</a></li>
+                            <li><a class="dropdown-item" href="#" id="videos">videos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <header>
+
+        <div class="pt-15 text-center ">
+            <h1><span class="color">Efficacy </span>Data</h1>
+            <svg width="241" height="15" viewBox="0 0 241 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M223.206 8.97342C214.676 8.97342 206.147 9.07645 197.617 8.94532C190.778 8.84229 183.938 8.28967 177.089 8.22411C171.169 8.16791 165.21 8.18663 159.33 8.76736C146.981 9.97564 134.692 11.7647 122.333 12.898C116.383 13.4413 110.563 12.5327 104.764 10.3784C95.3044 6.86595 85.4951 8.56128 75.8657 10.3971C70.2461 11.4649 64.6765 12.7481 59.0569 13.7504C54.0672 14.6402 49.6275 13.8066 45.5778 10.444C41.4981 7.05329 36.2384 7.89626 31.5188 8.93595C24.6592 10.4346 17.9497 12.5421 11.2002 14.4716C6.97048 15.6799 3.15074 14.8837 0.570916 11.3806C-0.279025 10.2285 -0.069036 7.98056 0.480926 6.51001C0.71091 5.89182 3.4507 5.35792 4.43064 5.85434C7.56042 7.43729 10.3002 6.36016 13.21 5.55464C21.7694 3.1849 30.3489 0.646561 39.4183 1.36779C42.3581 1.60195 45.6978 2.23888 47.9777 3.8031C52.6073 6.98772 57.367 6.38824 62.3167 5.59208C70.8461 4.2152 79.3355 2.59481 87.8949 1.43336C94.2645 0.571636 100.524 1.31158 106.644 3.53146C114.313 6.30396 122.363 5.59211 130.272 4.73975C143.491 3.31603 156.64 1.13362 169.889 0.131394C177.209 -0.421232 184.668 0.936906 192.078 1.11487C201.977 1.34903 211.886 1.2179 221.796 1.34903C226.905 1.4146 232.045 1.51764 237.115 2.0609C238.535 2.21077 240.604 3.80308 240.904 5.04883C241.514 7.55907 239.085 7.73704 237.065 7.84008C232.455 8.09297 227.845 8.36458 223.236 8.63621C223.236 8.74861 223.226 8.86101 223.216 8.96405L223.206 8.97342Z"
+                    fill="#5D0096" />
+            </svg>
+
+        </div>
+        <div class="text-center mainBg my-4 p-3 ">
+            <h4 class="title-efficacy-obesity color">SURMOUNT- 1 Study<sup class="text-danger">8</sup></h4>
+            <div class="paragraph-efficacy">
+                <p class="p-0 m-0">MOUNJARO vs. Placebo </p>
+                <p>(Adjunct to lifestyle intervention)</p>
+            </div>
+        </div>
+
+        <div class="box-with-image position-relative mb-4">
+            <div class="gray-box position-absolute h-100 py-5">
+                <img src="images/Rec.svg" alt="rectangle" class="h-100">
+            </div>
+            <div class="container">
+                <div class=" image-over-box h-100 w-100">
+                    <img src="images/efficacyObesity1.png" alt="efficacyObesity1.png" class="w-100 h-100">
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+    <div class="container">
+        <h4 class="color surpass-title">★SURMOUNT-1 Trial Design<sup class="text-danger">9</sup></h4>
+        <ul class="surpass-list">
+            <li>2539 patients were randomly assigned in a 1:1:1:1 ratio to receive Mounjaro at a dose of 5 mg, 10 mg, or
+                15 mg or placebo, administered subcutaneously once weekly for 72 weeks as an adjunct to lifestyle
+                intervention.
+
+            </li>
+            <li>
+                Participants: Adults (18 years of age or older), with a body-mass index (BMI) of 30 or more, or a BMI of
+                27 or more and at least one weight-related complication (e.g. hypertension, dyslipidemia, obstructive
+                sleep apnea, or cardiovascular disease), and who reported one or more unsuccessful dietary effort to
+                lose weight.</li>
+        </ul>
+    </div>
+    <div class="container">
+        <h4 class="text-danger">COPRIMARY ENDPOINTS (10 mg and/or 15 mg)</h4>
+        <ul class="surpass-list">
+            <li>Percentage change in weight from baseline at week 72.</li>
+            <li>Percentage of population with weight reduction of ≥5% at week 72.</li>
+        </ul>
+    </div>
+    <div class="container">
+        <h4 class="fs-5 text-danger">KEY SECONDARY ENDPOINTS</h4>
+        <ul class="surpass-list">
+            <li>Change from baseline to week 72 in systolic blood pressure, fasting insulin, and lipid levels
+                (triglycerides, HDL cholesterol, non-HDL cholesterol) (all doses combined).</li>
+            <li>Percentage of population with weight reduction of ≥10%, ≥15%, and ≥20% at week 72 (10 mg and/or 15 mg).
+            </li>
+            <li>Change from baseline to week 72 in waist circumference (10 mg and/or 15 mg).</li>
+            <li> Physical function score on the 36-Item Short Form Health Survey (SF-36), version 2, acute form (10 mg
+                and 15 mg).</li>
+        </ul>
+    </div>
+
+
+    <section>
+        <div class="container">
+            <h4 class="color surpass-title">★Results seen at 4 weeks and continued through 72 weeks with MOUNJAROF<sup
+                    class="text-danger">8</sup></h4>
+            <h6 class="fw-bold py-2"> CO-PRIMARY ENDPOINTS (10 mg and/or 15 mg)
+            </h6>
+            <p class="primary-endpoints">- Percentage change in weight from baseline at week 72</p>
+            <p class="primary-endpoints"> - Percentage of population with weight reduction of ≥5% at week 72.s</p>
+        </div>
+
+
+        <div class="my-5">
+            <div class="row">
+                <div class=" col-md-8 position-relative mb-4 ">
+
+                    <!-- <div class="container text-danger text-center p-3 px-5">
+                        <h4>Percentage change in body weight over time from baseline to week 72 (Efficacy estimand)</h4>
+                    </div> -->
+
+                    <div class="box-with-image position-relative mb-4">
+                        <div class="gray-box position-absolute h-100 py-5">
+                            <img src="images/Rec.svg" alt="rectangle" class="h-100">
+                        </div>
+                        <div class="container px-5">
+                            <div class=" image-over-box h-100 w-100">
+                                <img src="images/efficacyObesity2.png" alt="efficacyObesity2" class="w-100 h-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="col-md-4 container-lg d-flex flex-md-column align-items-center justify-content-center gap-4 ">
+                    <div class="details text-center py-4 px-1">
+                        <div class="text-danger d-flex align-items-center">
+                            <h1 class="text-danger">22.5 </h1>
+                            <img src="images/percentage.svg" alt="percentage" class="px-1">
+                            <span>average reduction
+                                in body weight</span>
+                        </div>
+                        <p class="m-0 pt-2"> with MOUNJARO 15 mg at 72 weeks</p>
+                    </div>
+                    <p class="p-4 ps-0 mt-sm-5 mt-md-0 resp-paragraph">p&lt;0.001 vs placebo, adjusted for multiplicity.
+                        Efficacy estimand, MMRM analysis.
+                        Studied in adults with obesity (BMI of ≥30 kg/m2) or with overweight (BMI of ≥27 kg/m2) with at
+                        least 1 weight-related complication, excluding type 2 diabetes.
+                        All participants received lifestyle intervention, including a reduced calorie diet and increased
+                        physical activity.
+                        BMI=body mass index; mITT=modified intent-to-treat;
+                        MMRM=mixed model for repeated measures.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container">
+            <h4 class="color surpass-title">★Significant weight reductions with the 3 doses of MOUNJARO<sup
+                    class="text-danger">8</sup></h4>
+            <h6 class="fw-bold py-2"> CO-PRIMARY ENDPOINTS (10 mg and/or 15 mg)
+
+            </h6>
+            <p class="primary-endpoints"> - Percentage change in weight from baseline at week 72.</p>
+            <p class="primary-endpoints"> - Percentage of population with weight reduction of ≥5% at week 72</p>
+        </div>
+
+        <div class="mainBg p-4 text-center">
+            <div class="container">
+                <div class="text-danger before-image-paragraph">Overall mean change in body weight from baseline at 72
+                    weeks (Efficacy estimand)</div>
+                <img src="images/efficacyObesity3.png" alt="efficacyObesity3" class="w-100 ">
+            </div>
+        </div>
+    </section>
+
+    <div class="container my-5">
+        ap&lt;0.001 vs placebo, not adjusted for multiplicity. <br>
+        bp&lt;0.001 vs placebo, adjusted for multiplicity. <br>
+        Efficacy estimand, MMRM analysis. <br>
+        Studied in adults with obesity (BMI of ≥30 kg/m2) or with overweight (BMI of ≥27 kg/m2) with at least 1
+        weight-related complication, excluding type 2 diabetes. 2 <br>
+        All participants received lifestyle intervention, including a reduced-calorie diet and increased physical
+        activity. <br>
+        BMI=body mass index; mITT=modified intent-to-treat; MMRM=mixed model for repeated measures. <br>
+    </div>
+
+
+    <section>
+        <div class="container">
+            <h4 class="color surpass-title">★A majority of people taking MOUNJARO achieved significant weight loss of
+                ≥5%<sup class="text-danger">8</sup></h4>
+            <h6 class="fw-bold py-2"> CO-PRIMARY ENDPOINTS (10 mg and/or 15 mg)
+
+            </h6>
+            <p class="primary-endpoints"> - Percentage change in weight from baseline at week 72.</p>
+            <p class="primary-endpoints"> - Percentage of population with weight reduction of ≥5% at week 72</p>
+        </div>
+        <div class="my-5">
+            <div class="row">
+                <div class=" col-md-8 position-relative mb-4 ">
+                    <div class="box-with-image position-relative mb-4">
+                        <div class="gray-box position-absolute h-100 py-5">
+                            <img src="images/Rec.svg" alt="rectangle" class="h-100">
+                        </div>
+                        <div class="container px-5">
+                            <div class=" image-over-box h-100 w-100">
+                                <img src="images/efficacyObesity4.png" alt="efficacyObesity4.png" class="w-100 h-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 container-lg d-flex d-md-block align-items-center justify-content-center gap-4 ">
+                    <div class="details text-center py-4 px-1">
+                        <div class="text-danger text-center">
+                            <h1>96% </h1>
+                        </div>
+                        <p class="m-0 pt-2">of people taking MOUNJARO
+                            10 mg and 15 mg
+                            demonstrated clinically
+                            significant weight loss of
+                            ≥5% at 72 weeks</p>
+                    </div>
+                    <p class="p-4 ps-0 mt-sm-5 mt-md-0 resp-paragraph">ap&lt;0.001 vs placebo, adjusted for
+                        multiplicity.
+                        Efficacy estimand, logistic regression analysis.
+                        Studied in adults with obesity (BMI of ≥30 kg/m2) or with overweight (BMI of ≥27 kg/m2) with at
+                        least 1
+                        weight-related complication, excluding type 2 diabetes.
+                        All participants received lifestyle intervention, including a reduced-calorie diet and increased
+                        physical activity.
+                        BMI=body mass index.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="container">
+            <h4 class="color surpass-title">★Percentage of patients with ≥20% and ≥25% weight reductions<sup
+                    class="text-danger">8</sup></h4>
+        </div>
+        <div class="my-5">
+            <div class="row">
+                <div class="col-12 col-md-8 position-relative mb-4 ">
+                    <div class="text-center text-danger p-5 pb-2">
+                        <h4>Percentage of people who achieved ≥20% and ≥25% weight reduction at 72 weeks</h4>
+                    </div>
+                    <div class="box-with-image position-relative mb-4">
+                        <div class="gray-box position-absolute h-100 py-5">
+                            <img src="images/Rec.svg" alt="rectangle" class="h-100">
+                        </div>
+                        <div class="container px-5">
+                            <div class=" image-over-box h-100 w-100">
+
+                                <img src="images/efficacyObesity5.png" alt="efficacyObesity5.png" class="w-100 h-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-12 col-md-4 d-flex flex-md-column align-items-center justify-content-center gap-4 ">
+                    <div class="details text-center py-4 px-1">
+                        <div class=" color text-center">
+                            <h1>~4 in 10</h1>
+                        </div>
+                        <p class="m-0 pt-2">people taking Mounjaro 15 mg
+                            demonstrated weight loss of</p>
+                        <div class=" text-danger">
+                            <h1>≥25%</h1>
+                        </div>
+                        <p>at 72 weeks</p>
+                    </div>
+                    <p class="p-4 ps-0 mt-sm-5 mt-md-0 resp-paragraph">ap&lt;0.001 vs placebo, not adjusted for
+                        multiplicity.
+                        bp&lt;0.001 vs placebo, adjusted for multiplicity. <br>
+                        Efficacy estimand, MMRM analysis.
+                        Studied in adults with obesity (BMI of ≥30 kg/m2) or with overweight (BMI of ≥27 kg/m2) with at
+                        least 1 weight-related complication, excluding type 2 diabetes.2 <br>
+                        All participants received lifestyle intervention, including a reduced-calorie diet and increased
+                        physical activity. <br>
+                        BMI=body mass index; mITT=modified intent-to-treat; MMRM=mixed model for repeated measures.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section>
+        <div class="container">
+            <h4 class="color surpass-title">★People taking MOUNJARO experienced improvements in key cardiometabolic
+                parameters<sup class="text-danger">9</sup></h4>
+        </div>
+
+        <div class="mainBg p-4 text-center">
+            <div class="container">
+                <div class="text-danger before-image-paragraph">Improvements in key cardiometabolic parameters from
+                    baseline to 72 weeks</div>
+                <img src="images/efficacyObesity6.png" alt="efficacyObesity6" class="w-100 ">
+            </div>
+        </div>
+    </section>
+
+    <div class="container my-4 p-3 p-font">
+        <p class="m-0 p-0"> *Averages from each dosage group are the least-squares mean change from baseline.
+            Statistical tests were
+            done
+            for each dosage group, not the ranges from group means. <br>
+            The efficacy estimand for individual doses was not adjusted for multiplicity, with the exception of waist
+            circumference 10 mg and 15 mg.
+            Studied in adults with obesity (BMI of ≥30 kg/m2) or with overweight (BMI of ≥27 kg/m2) with at least 1
+            weight-related complication, excluding type 2 diabetes. <br>
+            All participants received lifestyle intervention, including a reduced-calorie diet and increased physical
+            activity.
+            BMI=body mass index; HDL=high-density lipoprotein; LDL=low-density lipoprotein.</p>
+        <p class="text-danger m-0 p-0">*Mounjaro is not indicated for the reductions of blood pressure or triglycerides
+        </p>
+    </div>
+
+
+    <section>
+        <div class="text-center mainBg my-4 p-3 ">
+            <h4 class="title-efficacy-obesity color">SURMOUNT- 3 Study<sup class="text-danger">9</sup></h4>
+            <div class="paragraph-efficacy">
+                <p class="p-0 m-0">MOUNJARO vs. Placebo </p>
+                <p>(Adjunct to Intensive lifestyle intervention- with 12 weeks lead-in period)</p>
+            </div>
+        </div>
+
+        <div class="box-with-image position-relative mb-4">
+            <div class="gray-box position-absolute h-100 py-5">
+                <img src="images/Rec.svg" alt="rectangle" class="h-100">
+            </div>
+            <div class="container">
+                <div class=" image-over-box h-100 w-100">
+                    <img src="images/efficacyObesity7.png" alt="efficacyObesity7.png" class="w-100 h-100">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container">
+        <h4 class="color surpass-title">★SURMOUNT-3 Trial Design<sup class="text-danger">9</sup></h4>
+        <ul class="surpass-list">
+            <li><span class="text-danger"> Objective:</span> To evaluate the efficacy of Mounjaro at 72 weeks
+                post-randomization in adults with obesity
+                or overweight (but not diabetes) who successfully lost ≥5% of baseline weight during a 12-week lead-in
+                period that provided intensive lifestyle intervention. </li>
+            <li>
+                A total of 972 participants were assessed for eligibility at screening, of whom 806 were enrolled into
+                the 12-week intensive lifestyle intervention lead-in period.</li>
+            <li>
+                The majority of the 579 randomized participants were with an overall mean age of 45.6 years, the average
+                duration of obesity was 15.1 years, and 66.1% had a medical history of one or more obesity-related
+                complications.</li>
+        </ul>
+    </div>
+    <div class="container">
+        <h4 class="text-danger">PRIMARY ENDPOINTS</h4>
+        <ul class="surpass-list">
+            <li>Mean percentage reduction in body weight from randomization to week 72. </li>
+            <li> Percentage of participants achieving ≥5% body weight reduction.</li>
+        </ul>
+    </div>
+    <div class="container">
+        <h4 class="fs-5 text-danger">KEY SECONDARY ENDPOINTS</h4>
+        <ul class="surpass-list">
+            <li>Percentage of participants achieving body weight reduction ≥10, ≥15, ≥20%.</li>
+            <li> Percentage of participants maintaining ≥80% of lead-in body weight lost at week 72.</li>
+            <li> Change in waist circumference.</li>
+        </ul>
+    </div>
+    <div class="container">
+        <h4 class="fs-5 text-danger">Cardiometabolic risk factors and physical function.</h4>
+        <ul class="surpass-list">
+            <li>Change from randomization to week 72 in waist circumference.</li>
+            <li>Improvements in systolic blood pressure, diastolic blood pressure, fasting lipid levels (HDL, LDL, VLDL,
+                total cholesterol, triglycerides and free fatty acids), glycemic control (fasting glucose and HbA1c) and
+                fasting insulin.</li>
+        </ul>
+        <p class="text-danger">*Mounjaro is not indicated for the reductions of blood pressure or triglycerides</p>
+    </div>
+
+
+    <section>
+        <div class="container">
+            <h4 class="color surpass-title">★Significant weight reductions with MOUNJARO vs. placebo<sup
+                    class="text-danger">8</sup></h4>
+            <h6 class="fw-bold py-2"> PRIMARY ENDPOINTS</h6>
+            <p class="primary-endpoints"> - Mean percentage reduction in body weight from randomization to week 72.</p>
+            <p class="primary-endpoints">- Percentage of participants achieving ≥5% body weight reduction.</p>
+        </div>
+
+
+        <div class="my-5">
+            <div class="row">
+                <div class=" col-md-8 position-relative mb-4 ">
+                    <!-- <div class="text-center text-danger p-5 pb-2">
+                        <h4>Percentage change in body weight over time from randomization to week 72 (Efficacy estimand)</h4>
+                    </div> -->
+                    <div class="box-with-image position-relative mb-4">
+                        <div class="gray-box position-absolute h-100 py-5">
+                            <img src="images/Rec.svg" alt="rectangle" class="h-100">
+                        </div>
+                        <div class="container px-5">
+                            <div class=" image-over-box h-100 w-100">
+                                <img src="images/efficacyObesity8.png" alt="efficacyObesity8" class="w-100 h-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="col-md-4 container-lg d-flex flex-md-column align-items-center justify-content-center gap-4 ">
+                    <div class="details text-center py-4 px-1">
+                        <div class="text-danger d-flex align-items-center">
+                            <h1 class="text-danger">21.1 </h1>
+                            <img src="images/percentage.svg" alt="percentage" class="px-1">
+                            <span>average reduction in body weight</span>
+                        </div>
+                        <p class="m-0 pt-2"> with MOUNJARO 15 mg at 72 weeks</p>
+                    </div>
+                    <p class="p-4 ps-0 mt-sm-5 mt-md-0 resp-paragraph">p&lt;0.001 vs placebo
+                        Efficacy estimand, MMRM analysis.Percent change in body weight over time from randomization to
+                        72 weeks, derived from MMRM
+                        analysis for the efficacy estimand.
+                        Mean body weight (kg) over time from randomization to 72 weeks derived from a mixed-model for
+                        repeated measures (MMRM)
+                        analysis for the efficacy estimand.
+                        Participants who achieved ≥5.0% weight reduction at the end of the 12-week lead-in period were
+                        randomly assigned in a 1:1 ratio to
+                        receive either the MTD of tirzepatide (10 or 15 mg) or placebo.
+                        MMRM: Mixed-model for repeated measures; MTD: Maximum tolerated dose.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container">
+            <h4 class="color surpass-title">★Sustained weight reduction with MOUNJARO vs. placebo from the start of the
+                intensive lifestyle intervention to 72 weeks.<sup class="text-danger">9</sup></h4>
+            <h6 class="fw-bold py-2"> PRIMARY ENDPOINTS</h6>
+            <p class="primary-endpoints"> - Mean percentage reduction in body weight from randomization to week 72.</p>
+            <p class="primary-endpoints">- Percentage of participants achieving ≥5% body weight reduction.</p>
+        </div>
+
+
+        <div class="my-5">
+            <div class="row">
+                <div class=" col-md-8 position-relative mb-4 ">
+                    <div class="text-center text-danger p-5 pb-2">
+                        <h4>Body weight change by week from start of intensive lifestyle intervention (Efficacy
+                            Estimand)</h4>
+                    </div>
+                    <div class="box-with-image position-relative mb-4">
+                        <div class="gray-box position-absolute h-100 py-5">
+                            <img src="images/Rec.svg" alt="rectangle" class="h-100">
+                        </div>
+                        <div class="container px-5">
+                            <div class=" image-over-box h-100 w-100">
+                                <img src="images/efficacyObesity9.png" alt="efficacyObesity9" class="w-100 h-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="col-md-4 container-lg d-flex flex-md-column  align-items-center justify-content-center gap-4 ">
+                    <div class="details text-center py-4 px-1">
+                        <div class="text-danger d-flex align-items-center">
+                            <h1 class="text-danger">26.6 </h1>
+                            <img src="images/percentage.svg" alt="percentage" class="px-1">
+                            <span>average reduction in body weight</span>
+                        </div>
+                        <p class="m-0 pt-2"> with MOUNJARO MTD at week 72</p>
+                    </div>
+                    <p class="p-4 ps-0 mt-sm-5 mt-md-0 resp-paragraph">Mean (95% CI) percent change in body weight over
+                        time from the start of the intensive lifestyle intervention lead-in period (–12 weeks)
+                        to 72 weeks. <br>
+                        The mean change in body weight for the efficacy estimand was −21.1% with tirzepatide MTD and
+                        3.3% with placebo. The estimated
+                        treatment difference was −24.5 percentage points (95% CI −26.1, −22.8; P &lt; 0.001) for
+                        tirzepatide MTD versus placebo. MTD=maximum tolerated dose.. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section>
+        <div class="container">
+            <h4 class="color surpass-title">★A majority of people taking MOUNJARO maintained their weight lost during
+                the 12-week lead-in period<sup class="text-danger">9</sup></h4>
+            <h6 class="fw-bold py-2"> SECONDARY ENDPOINTS</h6>
+            <p class="primary-endpoints"> - Percentage of participants achieving body weight reduction ≥10, ≥15, ≥20%.
+            </p>
+            <p class="primary-endpoints"> - Percentage of participants maintaining ≥80% of lead-in body weight lost at
+                week 72.</p>
+            <p class="primary-endpoints"> - Change in waist circumference.</p>
+        </div>
+
+
+        <div class="my-5">
+            <div class="row">
+                <div class=" col-md-8 position-relative mb-4 ">
+                    <div class="text-center text-danger p-5 pb-2">
+                        <h4>Proportion of participants maintaining  80% of
+                            body weight lost during the 12-week lead-in period</h4>
+                    </div>
+                    <div class="box-with-image position-relative mb-4">
+                        <div class="gray-box position-absolute h-100 py-5">
+                            <img src="images/Rec.svg" alt="rectangle" class="h-100">
+                        </div>
+                        <div class="container px-5">
+                            <div class=" image-over-box h-100 w-100">
+                                <img src="images/efficacyObesity10.png" alt="efficacyObesity10" class="w-100 h-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="col-md-4 container-lg d-flex flex-md-column  align-items-center justify-content-center gap-4 ">
+                    <div class="details text-center py-4 px-1">
+                        <div class="text-center">
+                            <h1 class="text-danger">98.6% </h1>
+                        </div>
+                        <p class="m-0 pt-2"> of patients maintained
+                            ≥80% of body weight lost
+                            during ontesive lifestyle
+                            intervention</p>
+                    </div>
+                    <p class="p-4 ps-0 mt-sm-5 mt-md-0 resp-paragraph">LSM proportion of participants that maintained
+                        ≥80% of body weight reductions achieved at the end of the lead-in period.
+                        MTD=maximum tolerated dose.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section>
+        <div class="text-center mainBg my-4 p-3 ">
+            <h4 class="title-efficacy-obesity color">SURMOUNT- 4 Study<sup class="text-danger">10</sup></h4>
+            <div class="paragraph-efficacy">
+                <p class="p-0 m-0">MOUNJARO vs. Placebo </p>
+                <p>(Continued Treatment With MOUNJARO for Maintenance of Weight Reduction)</p>
+            </div>
+        </div>
+
+        <div class="box-with-image position-relative mb-4">
+            <div class="gray-box position-absolute h-100 py-5">
+                <img src="images/Rec.svg" alt="rectangle" class="h-100">
+            </div>
+            <div class="container">
+                <div class=" image-over-box h-100 w-100">
+                    <img src="images/efficacyObesity11.png" alt="efficacyObesity11.png" class="w-100 h-100">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container">
+        <h4 class="color surpass-title">★SURMOUNT-4 Trial Design<sup class="text-danger">10</sup></h4>
+        <ul class="surpass-list">
+            <li><span class="text-danger"> Objective:</span> To investigate the effect of continued treatment
+                with the maximum tolerated dose (ie, 10 or 15 mg) of once-weekly tirzepatide, compared with placebo, on
+                the maintenance of weight reduction following an initial open-label lead-in treatment period in
+                participants with obesity or overweight.</li>
+            <li>SURMOUNT-4 was a phase 3 randomized withdrawal study with a 36-week, open-label tirzepatide lead-in
+                period followed by a 52-week, double-blind, placebo-controlled period.</li>
+            <li>Eligible participants (18 years or older) had a body mass index (BMI) greater than or equal to 30 or
+                greater</li>
+            <li>than or equal to 27 and at least 1 weight-related complication (ie, hypertension, dyslipidemia,
+                obstructive</li>
+            <li>sleep apnea, or cardiovascular disease).</li>
+        </ul>
+    </div>
+    <div class="container">
+        <h4 class="text-danger">PRIMARY ENDPOINTS</h4>
+        <ul class="surpass-list">
+            <li>Percent change in body weight from randomization (week 36) to week 88.</li>
+        </ul>
+    </div>
+    <div class="container">
+        <h4 class="fs-5 text-danger">KEY SECONDARY ENDPOINTS</h4>
+        <ul class="surpass-list">
+            <li>Change in waist circumference (week 36 to 88).</li>
+            <li>Percentage of participants maintaining ≥80% of body weight lost (week 88).</li>
+            <li>Percentage of participants achieving body weight reduction (week 0 to 88) ≥5, ≥10, ≥15, ≥20%.</li>
+        </ul>
+    </div>
+    <div class="container">
+        <h4 class="fs-5 text-danger">Cardiometabolic risk factors and physical function.</h4>
+        <ul class="surpass-list">
+            <li>Change from randomization (week 36) to week 88 and from enrolment (week 0) to week 88 in cardiometabolic
+                risk factors including glycemic parameters, fasting insulin, lipids, blood pressure, and
+                patient-reported outcomes measured by the Short Form-36 Version 2 Health Survey (SF-36 v2) acute form
+                and Impact of Weight on Quality of Life-Lite-Clinical Trials Version (IWQOL-Lite-CT).</li>
+        </ul>
+        <p class="text-danger">*Mounjaro is not indicated for the reductions of blood pressure or triglycerides</p>
+    </div>
+
+    <section>
+        <div class="container">
+            <h4 class="color surpass-title">★Significant weight reductions with MOUNJARO during the entire study<sup
+                    class="text-danger">10</sup></h4>
+            <h6 class="fw-bold py-2"> PRIMARY ENDPOINTS</h6>
+            <p class="primary-endpoints">-Percent change in body weight from randomization (week 36) to week 88</p>
+        </div>
+
+
+        <div class="my-5">
+            <div class="row">
+                <div class=" col-md-8 position-relative mb-4 ">
+                    <div class="text-center text-danger p-5 pb-2">
+                        <h4>Percent change in body weight (week 0-88)</h4>
+                    </div>
+                    <div class="box-with-image position-relative mb-4">
+                        <div class="gray-box position-absolute h-100 py-5">
+                            <img src="images/Rec.svg" alt="rectangle" class="h-100">
+                        </div>
+                        <div class="container px-5">
+                            <div class=" image-over-box h-100 w-100">
+                                <img src="images/efficacyObesity12.png" alt="efficacyObesity12" class="w-100 h-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section>
+        <div class="container">
+            <h4 class="color surpass-title">★Effect of MOUNJARO maximum tolerated dose (10 or 15 mg) compared with
+                placebo
+                on efficacy outcomes<sup class="text-danger">10</sup></h4>
+            <h6 class="fw-bold py-2"> PRIMARY ENDPOINTS</h6>
+            <p class="primary-endpoints">
+                - Percent change in body weight from randomization (week 36) to week 88</p>
+        </div>
+
+
+        <div class="my-5">
+            <div class="row">
+                <div class=" col-md-8 position-relative mb-4 ">
+                    <div class="text-center text-danger p-5 pb-2">
+                        <h4>Percent change in body weight (weeks 36-88; treatment regimen estimand)</h4>
+                    </div>
+                    <div class="box-with-image position-relative mb-4">
+                        <div class="gray-box position-absolute h-100 py-5">
+                            <img src="images/Rec.svg" alt="rectangle" class="h-100">
+                        </div>
+                        <div class="container px-5">
+                            <div class=" image-over-box h-100 w-100">
+                                <img src="images/efficacyObesity13.png" alt="efficacyObesity13" class="w-100 h-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="col-md-4 container-lg d-flex flex-md-column align-items-center justify-content-center gap-4 ">
+                    <div class="details text-center py-3 px-1">
+                        <div>
+                            <h1 class="text-danger">5.5% </h1>
+                            <p>additional weight reduction during the 52-week double-blind period vs. placebo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h4 class="color surpass-title">★A majority of people taking MOUNJARO achieved significant weight loss ≥5,
+                10, 15, 20, and 25%<sup class="text-danger">10</sup></h4>
+            <h6 class="fw-bold py-2"> SECONARY ENDPOINTS</h6>
+            <p class="primary-endpoints"> -Percentage of participants maintaining ≥80% of body weight lost (week 88).
+            </p>
+            <p class="primary-endpoints">- Percentage of participants achieving body weight reduction (week 0 to 88) ≥5,
+                ≥10, ≥15, ≥20%.</p>
+        </div>
+
+
+        <div class="my-5">
+            <div class="row">
+                <div class=" col-md-8 position-relative mb-4 ">
+                    <div class="text-center text-danger p-5 pb-2">
+                        <h4>Participants who met weight-reduction thresholds
+                            (weeks 0-88; treatment regimen estimand)</h4>
+                    </div>
+                    <div class="box-with-image position-relative mb-4">
+                        <div class="gray-box position-absolute h-100 py-5">
+                            <img src="images/Rec.svg" alt="rectangle" class="h-100">
+                        </div>
+                        <div class="container px-5">
+                            <div class=" image-over-box h-100 w-100">
+                                <img src="images/efficacyObesity14.png" alt="efficacyObesity14" class="w-100 h-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container">
+            <h4 class="color surpass-title">★People taking MOUNJARO experienced improvements in key cardiometabolic
+                parameters<sup class="text-danger">10</sup></h4>
+        </div>
+
+        <div class="mainBg p-4 text-center">
+            <div class="container">
+                <div class="text-danger before-image-paragraph">Improvements in key cardiometabolic parameters from
+                    randomization to week 88</div>
+                <img src="images/efficacyObesity15.png" alt="efficacyObesity15" class="w-100 ">
+            </div>
+        </div>
+        <div class="container text-danger py-3">
+            <p>*Mounjaro is not indicated for the reductions of blood pressure or triglycerides</p>
+        </div>
+    </section>
+
+
+    <section>
+
+        <div class="pt-5 text-center ">
+            <h1><span class="color">Safety </span>Data</h1>
+            <svg width="241" height="15" viewBox="0 0 241 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M223.206 8.97342C214.676 8.97342 206.147 9.07645 197.617 8.94532C190.778 8.84229 183.938 8.28967 177.089 8.22411C171.169 8.16791 165.21 8.18663 159.33 8.76736C146.981 9.97564 134.692 11.7647 122.333 12.898C116.383 13.4413 110.563 12.5327 104.764 10.3784C95.3044 6.86595 85.4951 8.56128 75.8657 10.3971C70.2461 11.4649 64.6765 12.7481 59.0569 13.7504C54.0672 14.6402 49.6275 13.8066 45.5778 10.444C41.4981 7.05329 36.2384 7.89626 31.5188 8.93595C24.6592 10.4346 17.9497 12.5421 11.2002 14.4716C6.97048 15.6799 3.15074 14.8837 0.570916 11.3806C-0.279025 10.2285 -0.069036 7.98056 0.480926 6.51001C0.71091 5.89182 3.4507 5.35792 4.43064 5.85434C7.56042 7.43729 10.3002 6.36016 13.21 5.55464C21.7694 3.1849 30.3489 0.646561 39.4183 1.36779C42.3581 1.60195 45.6978 2.23888 47.9777 3.8031C52.6073 6.98772 57.367 6.38824 62.3167 5.59208C70.8461 4.2152 79.3355 2.59481 87.8949 1.43336C94.2645 0.571636 100.524 1.31158 106.644 3.53146C114.313 6.30396 122.363 5.59211 130.272 4.73975C143.491 3.31603 156.64 1.13362 169.889 0.131394C177.209 -0.421232 184.668 0.936906 192.078 1.11487C201.977 1.34903 211.886 1.2179 221.796 1.34903C226.905 1.4146 232.045 1.51764 237.115 2.0609C238.535 2.21077 240.604 3.80308 240.904 5.04883C241.514 7.55907 239.085 7.73704 237.065 7.84008C232.455 8.09297 227.845 8.36458 223.236 8.63621C223.236 8.74861 223.226 8.86101 223.216 8.96405L223.206 8.97342Z"
+                    fill="#5D0096" />
+            </svg>
+        </div>
+
+        <div class="container mt-5 mb-4">
+            <h4 class="color surpass-title">★SURMOUNT-1 Adverse Reactions<sup class="text-danger">8</sup></h4>
+        </div>
+        <div class="my-5">
+            <div class="row">
+                <div class=" col-md-8 position-relative mb-4 ">
+                    <div class="box-with-image position-relative mb-4">
+                        <div class="gray-box position-absolute h-100 py-5">
+                            <img src="images/Rec.svg" alt="rectangle" class="h-100">
+                        </div>
+                        <div class="container px-5">
+                            <div class=" image-over-box h-100 w-100">
+                                <img src="images/efficacyObesity16.png" alt="efficacyObesity16.png" class="w-100 h-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="col-md-4 container-lg d-flex flex-md-column align-items-center justify-content-center gap-4 ">
+                    <p class="p-4 ps-0 mt-sm-5 mt-md-0 resp-paragraph">The most common ARs were gastrointestinal
+                        (GI) in nature and were mostly mild to mode rate.4
+                        Gastrointestinal adverse reactions primarily
+                        occurred during dose escalation and decreased over time.4</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="container mt-5 mb-4">
+            <h4 class="color surpass-title">★SURMOUNT-3 Adverse Reactions<sup class="text-danger">9</sup></h4>
+        </div>
+        <div class="my-5">
+            <div class="row">
+                <div class=" col-md-8 position-relative mb-4 ">
+                    <div class="box-with-image position-relative mb-4">
+                        <div class="gray-box position-absolute h-100 py-5">
+                            <img src="images/Rec.svg" alt="rectangle" class="h-100">
+                        </div>
+                        <div class="container px-5">
+                            <div class=" image-over-box h-100 w-100">
+                                <img src="images/efficacyObesity17.png" alt="efficacyObesity17.png" class="w-100 h-100">
+                                <div class="text-center mb-0 pb-0">
+                                    <p>aRace and ethnicity were determined by the participant according to fixed
+                                        selection categories. bDuration of obesity was assessed by self-report.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5 mb-4">
+            <h4 class="color surpass-title">★SURMOUNT-3 Adverse Reactions<sup class="text-danger">10</sup></h4>
+        </div>
+        <div class="my-5">
+            <div class="row">
+                <div class=" col-md-8 position-relative mb-4 ">
+                    <div class="box-with-image position-relative mb-4">
+                        <div class="gray-box position-absolute h-100 py-5">
+                            <img src="images/Rec.svg" alt="rectangle" class="h-100">
+                        </div>
+                        <div class="container px-5">
+                            <div class=" image-over-box h-100 w-100">
+                                <img src="images/efficacyObesity18.png" alt="efficacyObesity18.png" class="w-100 h-100">
+                                <div class="text-center mb-0 pb-0">
+                                    <p>c Adverse events are listed according to Medical Dictionary for Regulatory
+                                        Activities, version 26.0, preferred terms..</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container ">
+        <p class="ref pt-3 text-danger">★References:</p>
+    </div>
+    
+    <div class="container-lg">
+        <div class="card-border p-4 mb-5">
+            <ol class="color">
+                <li>
+                    <p class="text-black">Nauck MA, D'Alessio DA. Tirzepatide, a dual GIP/GLP-1 receptor co-agonist for
+                        the treatment of type 2 diabetes with unmatched effectiveness regrading glycaemic control and
+                        body weightr eduction. Cardiovascular diabetology. 2022 Sep 1;21(1):169.</p>
+                </li>
+                <li>
+                    <p class="text-black">
+                        GLUCAGON-LIKE PEPTIDE-1 (GLP-1) RECEPTOR AGONISTS AND DUALAGONISTS. Available at: <a
+                            href="https://elsevier.health/en-US/preview/glucagon-like-peptide-1-glp-1-receptor-agonists.Last">https://elsevier.health/en-US/preview/glucagon-like-peptide-1-glp-1-receptor-agonists.Last</a>
+                        accessed: Nov.05.2024.
+                    </p>
+                </li>
+                <li>
+                    <p class="text-black">
+                        Mounjaro prescribing information. Approval date: 13/3/2024.
+                    </p>
+                </li>
+                <li>
+                    <p class="text-black">Mounjaro, EMA Summary of product characteristics. Available at: <a
+                            href="https://www.ema.europa.eu/en/documents/product-information/mounjaro-epar-product-information_en.pdf.">https://www.ema.europa.eu/en/documents/product-information/mounjaro-epar-product-information_en.pdf.</a>
+                        Last accessed: 15 September 2022.
+                    </p>
+                </li>
+                <li>
+                    <p class="text-black">Nauck MA, Quast DR, Wefers J, Pfeiffer AFH. The evolving story of incretins
+                        (GIP and GLP-1) in metabolic and cardiovascular disease: A pathophysiological update. Diabetes
+                        Obes Metab. 2021;23 Suppl 3:5-29.</p>
+                </li>
+                <li>
+                    <p class="text-black">Krieger JP. Intestinal glucagon-like peptide-1 effects on food intake:
+                        Physiological relevance and emerging mechanisms. Peptides. 2020;131:170342.</p>
+                </li>
+                <li>
+                    <p class="text-black">Heise T, DeVries JH, Urva S, et al. Tirzepatide Reduces Appetite, Energy
+                        Intake, and Fat Mass in People With Type 2 Diabetes. Diabetes Care. 2023;46(5):998-1004.</p>
+                </li>
+                <li>
+                    <p class="text-black">Jastreboff AM, Aronne LJ, Ahmad NN, et al. Tirzepatide once weekly for the
+                        treatment of obesity. New England Journal of Medicine. 2022;387(3):205-16.</p>
+                </li>
+                <li>
+                    <p class="text-black">Wadden TA, et al. Tirzepatide after intensive lifestyle intervention in adults
+                        with overweight or obesity: the SURMOUNT-3 phase 3 trial. Nature medicine. 2023
+                        Nov;29(11):2909-18.</p>
+                </li>
+                <li>
+                    <p class="text-black">Aronne LJ, Sattar N, Horn DB, et al. Continued treatment with tirzepatide for
+                        maintenance of weight reduction in adults with obesity: the SURMOUNT-4 randomized clinical
+                        trial. Jama. 2024 Jan 2;331(1):38-48.</p>
+                </li>
+
+
+            </ol>
+        </div>
+    </div>
+
+    <button class="btn scroll-top-btn">
+        <img src="images/Top.png" alt="top">
+    </button>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-sm-4 justify-content-around">
+                <!-- Column 1 -->
+                <div class="col-md-2">
+                    <h6><strong>Home</strong></h6>
+                    <a class="text-secondary" href="#" id="indication">Indication</a>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-md-2">
+                    <h6><strong>Obesity</strong></h6>
+                    <a class="footer-color" href="#" id="obesityWorks">How MOUNJARO works</a><br>
+                    <a class="footer-color" href="#" id="efficacyObesity">Efficacy & Safety</a><br>
+                    <a class="footer-color" href="#" id="obesityWorks">Instructions on how to use</a><br>
+                    - <a class="footer-color" href="#" id="vials">Vials</a><br>
+                    - <a class="footer-color" href="#" id="kwipens">Kwikpens</a>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="col-md-2">
+                    <h6><strong>Diabetes</strong></h6>
+                    <a class="footer-color" href="#" id="diabetesWorks">How MOUNJARO works</a><br>
+                    <a class="footer-color" href="#" id="efficacyDiabetes">Efficacy & Safety</a><br>
+                    <a class="footer-color" href="#" id="diabetesWorks">Instructions on how to use</a><br>
+                    - <a class="footer-color" href="#" id="vials">Vials</a><br>
+                    - <a class="footer-color" href="#" id="kwipens">Kwikpens</a>
+
+                </div>
+
+                <!-- Column 4 -->
+                <div class="col-md-3">
+                    <h6><strong>Prescribing info</strong></h6>
+                    <a class="footer-color" href="#Therapeutic">Therapeutic indications</a><br>
+                    <a class="footer-color" href="#Posology">Posology and method of administration</a><br>
+                    <a class="footer-color" href="#Contraindications">Contraindications</a><br>
+                    <a class="footer-color" href="#Special">Special warnings and precautions for use</a><br>
+                    <a class="footer-color" href="#Fertility">Fertility, pregnancy and lactation</a><br>
+                    <a class="footer-color" href="#Undesirable">Undesirable effects</a>
+                </div>
+
+                <!-- Column 5 -->
+                <div class="col-md-2">
+                    <h6><strong>Education Hub</strong></h6>
+                    <a class="footer-color" href="#" id="podcasts">Podcasts</a><br>
+                    <a class="footer-color" href="#" id="videos">Videos</a>
+                </div>
+
+                <!-- Logo Column -->
+
+                <div class=" d-flex gap-4 align-items-center justify-content-between">
+                    <div>
+                        <img src="images/logoMounjaro.svg" alt="MounjaroLogo" class="w-100">
+
+                    </div>
+                    <div>
+                        <p class="footer-color">© 2024 Mounjaro® (tirzepatide). All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/efficacyObesity.js"></script>
+</body>
+
+</html>

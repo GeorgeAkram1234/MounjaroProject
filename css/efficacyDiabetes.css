@@ -124,9 +124,9 @@
 
 
 @media screen and (max-width: 992px) { */
-  .resp-paragraph {
+  /* .resp-paragraph {
     min-width: 400px;
-  }
+  } */
   .details {
     min-width: 400px;
   }
@@ -137,9 +137,9 @@
   /* .details {
     width: 50%;
   } */
-  .resp-paragraph {
+  /* .resp-paragraph {
     min-width: 400px;
-  }
+  } */
   .details {
     min-width: 200px;
   }
@@ -150,9 +150,9 @@
   /* .details {
     width: 50%;
   } */
-  .resp-paragraph {
+  /* .resp-paragraph {
     min-width: 400px;
-  }
+  } */
   .details {
     min-width: 200px;
   }
@@ -163,9 +163,9 @@
   /* .details {
     width: 50%;
   } */
-  .resp-paragraph {
+  /* .resp-paragraph {
     min-width: 400px;
-  }
+  } */
   .details {
     min-width: 200px;
   }

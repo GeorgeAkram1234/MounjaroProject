@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () { 
+document.addEventListener('DOMContentLoaded', function () {
     const inputs = document.querySelectorAll('.form-control');
     const submitBtn = document.querySelector('form .btn');
     const name = document.querySelector('#name');
@@ -6,92 +6,117 @@ document.addEventListener('DOMContentLoaded', function () {
     const phone = document.querySelector('#phone');
     const city = document.querySelector('#city');
     const medicalId = document.querySelector('#medical');
-    
-    const check = document.querySelector('.true-label');
-    const error = document.querySelector('error-label');
-    const errorText = document.querySelector('error-txt');
-
-
-    const users = [];
 
     // Initially disable the submit button
     submitBtn.disabled = true;
 
-    // Function to check if all required fields are filled
-    function checkInputs() {
-        if (name.value.trim() && email.value.trim() && phone.value.trim() && city.value.trim()) {
-            submitBtn.disabled = false; // Enable submit button
+    // Validation functions
+    function validateName(name) {
+        return /^[A-Za-z\s]+$/.test(name);
+    }
+
+    function validateEmail(email) {
+        return /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email);
+    }
+
+    function validatePhone(phone) {
+        return /^\d{7,15}$/.test(phone); // Ensures only numbers and reasonable length
+    }
+
+    function validateCity(city) {
+        return city.trim().length > 0;
+    }
+
+    function validateInput(input) {
+        let isValid = false;
+        let value = input.value.trim();
+        let parent = input.closest('.mb-3');
+        let checkIcon = parent.querySelector('.true-label');
+        let errorIcon = parent.querySelector('.error-label');
+
+        if (input.id === "name") {
+            isValid = validateName(value);
+        } else if (input.id === "email") {
+            isValid = validateEmail(value);
+        } else if (input.id === "phone") {
+            isValid = validatePhone(value);
+        } else if (input.id === "city") {
+            isValid = validateCity(value);
         } else {
-            submitBtn.disabled = true; // Keep it disabled
+            isValid = true; // Optional field (Medical ID) is always valid
+        }
+
+        if (value === "") {
+            checkIcon.classList.add('d-none');
+            errorIcon.classList.add('d-none');
+            input.style.borderColor = ''; // Reset border
+        } else if (isValid) {
+            checkIcon.classList.remove('d-none');
+            errorIcon.classList.add('d-none');
+            input.style.borderColor = '#22C55E'; // Green border
+        } else {
+            checkIcon.classList.add('d-none');
+            errorIcon.classList.remove('d-none');
+            input.style.borderColor = '#DC3545'; // Red border
+        }
+
+        checkFormValidity();
+    }
+
+    function checkFormValidity() {
+        if (
+            validateName(name.value) &&
+            validateEmail(email.value) &&
+            validatePhone(phone.value) &&
+            validateCity(city.value)
+        ) {
+            submitBtn.disabled = false; // Enable button if all fields are valid
+        } else {
+            submitBtn.disabled = true; // Keep disabled if any field is invalid
         }
     }
 
-    // Attach event listeners to all required fields
-    [name, email, phone, city].forEach(input => {
-        input.addEventListener('input', checkInputs);
-    });
-
-    submitBtn.addEventListener('click', function (event) {
-        event.preventDefault(); // Prevent form from submitting by default
-
-        const user = {
-            name: name.value,
-            email: email.value,
-            phone: phone.value,
-            city: city.value,
-            medicalId: medicalId.value,
-        };
-        
-        users.push(user);
-        window.location.href = 'home.html'; // Redirect after submission
-    });
-
-    // Label animations and background color change
+    // Attach event listeners for validation and animation
     inputs.forEach(input => {
+        const label = input.previousElementSibling;
+
         input.addEventListener('focus', function () {
-            const label = this.previousElementSibling;
             if (label && label.classList.contains('form-label')) {
                 label.classList.add('label-up');
-                const span = label.querySelector('.text-danger');
-                if (span) {
-                    span.style.display = 'none'; // Hide the asterisk when focused
-                }
             }
         });
 
         input.addEventListener('blur', function () {
-            const label = this.previousElementSibling;
             if (label && label.classList.contains('form-label') && !this.value) {
                 label.classList.remove('label-up');
-                const span = label.querySelector('.text-danger');
-                if (span) {
-                    span.style.display = ''; // Show the asterisk again if empty
-                }
             }
+            validateInput(this); // Ensure validation works even after losing focus
         });
 
         input.addEventListener('input', function () {
-            if (this.value) {
-                this.style.borderColor = '#22C55E';
-                check.classList.remove('d-none')
-            } else {
-                this.style.borderColor = ''; // Reset background if empty
-                check.classList.add('d-none')
-            }
+            validateInput(this);
         });
 
-        
-        if (input.value) {
-            const label = input.previousElementSibling;
-            if (label && label.classList.contains('form-label')) {
-                label.classList.add('label-up');
-                const span = label.querySelector('.text-danger');
-                if (span) {
-                    span.style.display = 'none'; // Hide asterisk for prefilled fields
-                }
-            }
-            input.style.borderColor = '#22C55E'; // Apply background if prefilled
+        // Keep label up if field has pre-filled value
+        if (input.value.trim()) {
+            label.classList.add('label-up');
+        }
+    });
 
+    submitBtn.addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent form submission
+
+        if (!submitBtn.disabled) {
+            const user = {
+                name: name.value,
+                email: email.value,
+                phone: phone.value,
+                city: city.value,
+                medicalId: medicalId.value,
+            };
+
+            console.log("User data submitted:", user);
+            window.location.href = 'home.html'; // Redirect if all inputs are valid
         }
     });
 });

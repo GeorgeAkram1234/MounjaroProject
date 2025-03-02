@@ -47,6 +47,12 @@
                     <label for="email" class="form-label position-absolute">Email address <span
                             class="text-danger">*</span></label>
                     <input type="email" class="form-control" id="email">
+                    <div class="position-absolute d-none true-label">
+                        <img src="images/True.svg" alt="">
+                    </div>
+                    <div class="position-absolute d-none error-label">
+                        <img src="images/Error.svg" alt="">
+                    </div>
                 </div>
                 <div class="mb-3 position-relative">
 
@@ -55,11 +61,23 @@
                         number <span class="text-danger">*</span>
                     </label>
                     <input type="tel" class="form-control" id="phone">
+                    <div class="position-absolute d-none true-label">
+                        <img src="images/True.svg" alt="">
+                    </div>
+                    <div class="position-absolute d-none error-label">
+                        <img src="images/Error.svg" alt="">
+                    </div>
                 </div>
                 <div class="mb-3 position-relative">
                     <label for="city" class="form-label position-absolute">City <span
                             class="text-danger">*</span></label>
                     <input list="cities" class="form-control" id="city" aria-label="Select or type your city">
+                    <div class="position-absolute d-none true-label">
+                        <img src="images/True.svg" alt="">
+                    </div>
+                    <div class="position-absolute d-none error-label">
+                        <img src="images/Error.svg" alt="">
+                    </div>
                     <datalist id="cities">
                         <option value="Cairo"></option>
                         <option value="Casablanca"></option>
@@ -71,6 +89,12 @@
                     <label for="medical" class="form-label  position-absolute">Attach Medical ID <span
                             class="text-secondary optional">(optional)</span></label>
                     <input type="text" class="form-control" id="medical">
+                    <div class="position-absolute d-none true-label">
+                        <img src="images/True.svg" alt="">
+                    </div>
+                    <div class="position-absolute d-none error-label">
+                        <img src="images/Error.svg" alt="">
+                    </div>
                 </div>
 
                 <button type="submit" class="btn text-white w-100 ">Submit</button>
